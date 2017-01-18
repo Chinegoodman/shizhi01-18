@@ -1,0 +1,711 @@
+//less
+//网站中所有的阴影效果
+@bgshadow:inset 0 0 8px 0  #EBEBEB;
+@bgshadow2:inset 0 0 3px 0  #EBEBEB;
+@bgshadow3:0 0 1px 0  #EBEBEB;
+@content_topbarbgcolor:#ffffff;
+@bgcolor:#f6f6f6;
+//资讯列表展开后的颜色样式及侧栏navs颜色
+@top_infor_tec:#62CAFF;
+@top_infor_med:#fd8989;
+@top_infor_eco:#94d816;
+@top_infor_fut:#ffce0a;
+@top_infor_lisbg:#FFF;
+@top_infor_lisbgHover:#F6F6F6;
+
+@slidenavsinfor_lis_box_uls_bg:#f6f6f6;
+//左侧关于部分的颜色
+@slidenavs_others_bordercolor:#e1e1e1;
+@slidenavs_otherscolor:#c5c5c5;
+
+//页面中间的展示项的颜色
+@contents_li_bgcolor:#FFF;
+@contents_li_txt:#333;
+@contents_li_author_name:#6F6F6F;
+@contents_li_author_type:#B6B6B6;
+@contents_li_author_tags_newbg:#FF5D5D;
+@contents_li_author_tags_newfont:#FFF;
+@contents_li_author_tags_selfbg:#FFEA00;
+@contents_li_author_tags_selffont:#333333;
+@contents_li_triangle:f6f6f6;
+@contents_lis_show_bordercolor:#e1e1e1;
+//页面中间点开li后详情页的样式
+@index_artical_details_words:#333;
+@index_artical_details_titlewords:#333;
+//落款样式部分颜色
+@index_artical_details_statementP:#6F6F6F;
+@index_artical_details_statement:#333;
+@index_artical_details_wxfocus:#333;
+@index_artical_details_statementbgcolor:#EBEBEB;
+
+//点赞、评论等li点开区域的样式颜色
+@index_artical_details_supportborder:#B6B6B6;
+@index_artical_details_supportfont:#B6B6B6;
+@index_artical_details_comment_textarea_color:#B6B6B6;
+@index_artical_details_comment_textarea_focuscolor:#333333;
+@index_artical_details_comment_textarea_border:#E1E1E1;
+@index_artical_details_comment_textarea_focusborder:#FFEA00;
+@index_artical_details_comment_submit_color:#333;
+@index_artical_details_comment_submit_bgcolor:#FFEA00;
+@index_artical_details_comment_submit_Hoverbgcolor:#F4E000;
+//评论部分颜色
+@index_artical_details_comment_pic_name:#B6B6B6;
+@index_artical_details_comment_othersbordercolor:#E1E1E1;
+@index_artical_details_comment_othersfontcolor:#B6B6B6;
+@index_artical_details_comment_jubaoHover:#FF5D5D;
+@index_artical_details_comment_othersleftbordercolor:#E1E1E1;
+@index_artical_details_comment_othersleftborderHovercolor:#FFEA00;
+@index_artical_details_comment_othersleftcolor:#B6B6B6;
+@index_artical_details_comment_othersleftHovercolor:#333;
+@index_artical_details_comment_cancelsubmitcolor:#B6B6B6;
+@index_artical_details_comment_cancelsubmithOVERcolor:#333;
+@artificial_border:#e8e8e8;
+@index_artical_details_comment_li_over1_shouqi_clickbtn:#B6B6B6;
+@index_artical_details_comment_li_over1_shouqi_clickbtnHover:#FF5D5D;
+
+//加载更多按钮颜色
+@loadmore_index_artical_details_comment_liborder:#e8e8e8;
+@loadmore_index_artical_details_comment_licolor:#B6B6B6;
+@loadmore_index_artical_details_comment_licolorHover:#333333;
+@loadmore_index_artical_details_comment_libgcolor:#FFFFFF;
+@loadmore_index_artical_details_comment_libgcolorHover:#F6F6F6;
+
+
+//中间右侧的颜色
+@right_knowledge_titlecolor:#6F6F6F;
+@right_knowledge_lis_bordercolor:#e1e1e1;
+@right_knowledgeauthor_namecolor:#333;
+@right_knowledgeauthor_unit_icon:#B6B6B6;
+@right_popularart_hot_title:#333333;
+@right_popularart_hot_type_time:#B6B6B6;
+
+@right_audio_connectcontents:#e1e1e1;
+@right_audio_connectcontents_author_name:#333333;
+@right_audio_connectcontents_author_wznumber:#B6B6B6;
+
+@right_audio_connectcontents_imgbox:#E1E1E1;
+@right_audio_connectcontents_imgboxHover:#FFEA00;
+@right_author_img_tipscolor:#6F6F6F;
+@right_author_img_tipsbgcolor:#FFF;
+
+//底部进度条 样色
+@progressbar_boxcolor:#6F6F6F;
+@progressbar_bgcolor:#E1E1E1;
+@progressbar_jdcolor:#FFEA00;
+
+//轻浮动
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+
+//新的中间内容部分样式
+@author_and_works:#FFF;
+@author_name:#333;
+@author_about:#B6B6B6;
+@author_work_type_iconbgcolor:#FFEA00;
+@author_work_type_iconfontcolor:#333333;
+@contents:#FFF;
+@personalcenter_bgcolor:#FFF;
+@personalcenter_Hovercolor:#F6F6F6;
+@personalcenter_edit_tips:#333;
+
+@personal_name_job_more:#B6B6B6;
+@personal_name:#333;
+
+@personalcenter_top_lis:#B6B6B6;
+@personalcenter_top_lisHover:#ffd606;
+@personalcenter_top_lis_msgtips:#ff5d5d;
+//@personalcenter_top_lis_artical_aHover
+@personalcenter_top_lis_title:#333;
+@personalcenter_contents_li_contentselect_number:#B6B6B6;
+@personalcenter_contents_li_contentselect_typebgcolor:#f6f6f6;
+@personalcenter_contents_li_contentselect_content_fabu_title:#333;
+@personalcenter_contents_li_contentselect_content_fabu_about:#B6B6B6;
+
+@personalcenter_contents_li_artical_review_listitle:#333;
+@personalcenter_contents_li_artical_review_listip:#6F6F6F;
+@personalcenter_contents_li_artical_review_no_textborder:#E1E1E1;
+@personalcenter_contents_li_artical_review_no_textbgcolor:#f6f6f6;
+@personalcenter_contents_li_artical_review_lis_timecolor:#B6B6B6;
+@personalcenter_contents_li_artical_review_lisborder:#e8e8e8;
+
+@personalcenter_contents_li_content_li_receive_time_date:#B6B6B6;
+@personalcenter_contents_li_content_li_receive_from:#333333;
+@personalcenter_contents_li_content_li_receive_fromhaveread:#6F6F6F;
+@personalcenter_contents_li_content_li_receiveHoverbgcolor:#F6F6F6;
+@personalcenter_contents_li_content_li_receiveHover_fromcolor:#333333;
+
+@personalcenter_contents_li_content_li_commentborder:#e8e8e8;
+@personalcenter_contents_li_content_li_comment_text:#333333;
+@personalcenter_contents_li_content_li_comment_time:#B6B6B6;
+@personalcenter_contents_li_content_li_commentfrom_to:#FFBC4C;
+
+
+
+@bottom_content:#B6B6B6;
+//内容部分样式
+html{
+  font-size: 100px;
+}
+body{
+  background: @bgcolor;
+  min-width:1336px;
+}
+#content_box{
+  width:100%;
+  //margin-bottom: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+#content{
+  //width:14.4rem;
+  margin:0 auto;
+  //min-width:1336px;
+}
+#content_topbar{
+  width:14.4rem;
+  height:1rem;
+  margin:0 auto;
+  -webkit-box-shadow: @bgshadow;
+  -moz-box-shadow: @bgshadow;
+  box-shadow: @bgshadow;
+  border-radius: 0.08rem;
+  background:@content_topbarbgcolor;
+  position: relative;
+}
+.content_topbar_logo{
+  float: left;
+  //margin:0.26rem 0.78rem 0.25rem 0.83rem;
+  margin:0.26rem 0 0 0.83rem;
+}
+.content_topbar_logo img{
+  width:1.39rem;
+  height:0.49rem;
+}
+.content_topbar_barpic{
+  width:8.4rem;
+  height:0.8rem;
+  //margin:0 auto;
+  //padding-top: 0.1rem;
+  position: absolute;
+  left: 3rem;
+  top: 0.1rem;
+  border-radius: 0.05rem;
+  overflow: hidden;
+}
+.content_topbar_barpic>img{
+  width:100%;
+  height:100%;
+}
+.content_topbar_right{
+  position: absolute;
+  right:0.54rem;
+  top:0.31rem;
+  text-align: right;
+}
+.content_topbar_right p{
+  font-size: 14px;
+  line-height: 15px;
+  color: #000;
+}
+.content_topbar_right span{
+  font-size: 7px;
+}
+//内容顶部的bar样式结束
+//内容开始contents
+#contents{
+  width:8.4rem;
+  margin:0rem auto 0;
+}
+.personalcenter_top{
+  padding:0.3rem 0.5rem 0.4rem;
+  background: @contents;
+  position: relative;
+  border-radius: 0.08rem;
+}
+.personalcenter_edit_more>li{
+  float: left;
+  margin-right: 0.2rem;
+  width:0.3rem;
+  height:0.3rem;
+  position: relative;
+}
+.personalcenter_edit_iconbox,.personalcenter_more_iconbox{
+  width:100%;
+  height:100%;
+  line-height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background: @personalcenter_bgcolor;
+  cursor: pointer;
+}
+.personalcenter_edit_iconbox:hover,.personalcenter_more_iconbox:hover{
+  background: @personalcenter_Hovercolor;
+}
+.personalcenter_edit_iconbox:hover img,.personalcenter_more_iconbox:hover img{
+  background: @personalcenter_Hovercolor;
+}
+.personalcenter_edit_iconbox>img,.personalcenter_more_iconbox>img{
+  background: @personalcenter_bgcolor;
+}
+.personalcenter_edit_tips,.personalcenter_more_tips{
+  position: absolute;
+  left:0;
+  top:0.18rem;
+  margin-left: -0.53rem;
+  padding:0.1rem;
+  width:1.16rem;
+  height:0.8rem;
+  background: @personalcenter_bgcolor;
+  color:@personalcenter_edit_tips;
+  border-radius: 0.04rem;
+  -webkit-box-shadow: @bgshadow;
+  -moz-box-shadow: @bgshadow;
+  box-shadow: @bgshadow;
+}
+.personalcenter_edit>.personalcenter_edit_tips{
+  height:0.4rem;
+}
+.personalcenter_onoff_tips{
+  display: none;
+  position: relative;
+}
+.personalcenter_up_triangle{
+  width:0;
+  height:0;
+  border-left:0.1rem solid transparent;
+  border-right:0.1rem solid transparent;
+  border-bottom:0.12rem solid @personalcenter_bgcolor;
+  position: absolute;
+  left:0.58rem;
+  top:-0.12rem;
+}
+.personalcenter_edit_tips>p,.personalcenter_more_tips>p{
+  width:100%;
+  height:0.4rem;
+  line-height:0.4rem;
+  text-align: center;
+  font-size: 0.16rem;
+  color: @personalcenter_edit_tips;
+  cursor: pointer;
+}
+.personalcenter_more_tips>p:hover{
+  background-color:@personalcenter_Hovercolor;
+}
+
+.personal_name_pic_more{
+  margin-top: 0.4rem;
+}
+.personal_name{
+  font-size: 0.26rem;
+  color: @personal_name;
+  margin-bottom: 0.2rem;
+}
+.personal_workplace,.personal_job{
+  font-size: 0.16rem;
+  color: @personal_name_job_more;
+}
+.personal_pic_box{
+  position: absolute;
+  right:0.5rem;
+  top:0.7rem;
+}
+.personal_pic_special_icon{
+  position: absolute;
+  right:1rem;
+  top:0;
+  z-index: 10;
+}
+.personal_pic{
+  position: absolute;
+  right:0;
+  top:0.1rem;
+  width:1.4rem;
+  height:1.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.personal_pic>img{
+  width:100%;
+  height:100%;
+}
+.personalcenter_top_lis{
+  margin-top:0.66rem;
+}
+.personalcenter_top_lis>li{
+  float: left;
+  width:1.85rem;
+
+}
+.personalcenter_top_lis>li{
+  color: @personalcenter_top_lis;
+  cursor: pointer;
+}
+.personalcenter_top_lis>li.personalcenter_top_lis_select{
+  color: @personalcenter_top_lisHover;
+}
+.personalcenter_top_lis>li:hover{
+  color: @personalcenter_top_lisHover;
+}
+.personalcenter_top_lis>li>p{
+  font-size: 0.28rem;
+  margin-bottom: 0.08rem;
+  line-height:0.28rem;
+  height:0.28rem;
+}
+.personalcenter_top_lis>li>div{
+  height:0.16rem;
+}
+.personalcenter_top_lis>li>div>p{
+  font-size: 0.16rem;
+  margin-right: 0.06rem;
+  line-height:0.16rem;
+  height:0.16rem;
+}
+.personalcenter_top_lis>li>div>p,div.personalcenter_top_lis_msgtips{
+  display: inline-block;
+}
+.personalcenter_top_lis_msgtips{
+  width:0.08rem;
+  height:0.08rem;
+  background-color: @personalcenter_top_lis_msgtips;
+  margin-bottom: 0.03rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+//中间上半部分结束
+//中间下部分开始
+.personalcenter_contents{
+  padding:0 0.5rem 0.5rem;
+  background: @personalcenter_bgcolor;
+  margin-top: 0.2rem;
+
+  border-radius: 0.08rem;
+}
+//已发布的样式
+.personalcenter_contents_li_artical{
+  display: none;
+}
+.personalcenter_contents_li_show{
+  display: block;
+}
+.personalcenter_contents_li_contentselect{
+  position: relative;
+  height:0.6rem;
+  line-height: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+.personalcenter_contents_li_contentselect>.personalcenter_top_lis_msgtips{
+  /*width:0.08rem;
+  height:0.08rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: @personalcenter_top_lis_msgtips;*/
+  position: absolute;
+  left:-0.14rem;
+  //top:0.26rem;
+  top:0.26rem;
+}
+.personalcenter_top_lis_title,.personalcenter_contents_li_contentselect_more{
+  float: left;
+  height:0.6rem;
+  line-height: 0.6rem;
+}
+.personalcenter_contents_li_contentselect_more{
+  position: relative;
+  cursor: pointer;
+}
+.personalcenter_top_lis_title{
+  font-size: 0.14rem;
+  color: @personalcenter_top_lis_title;
+  margin-right: 0.06rem;
+}
+.personalcenter_contents_li_contentselect_more_icon{
+  //cursor: pointer;
+  width:0.1rem;
+  height:0.1rem;
+}
+.personalcenter_contents_li_contentselect_more_icon:hover + .personalcenter_contents_li_contentselect_type{
+  //display: block;
+}
+.personalcenter_contents_li_contentselect_type{
+  display: none;
+  position: absolute;
+  left:-0.55rem;
+  top:0.57rem;
+  width:1rem;
+  height:0.8rem;
+  border-radius: 0.04rem;
+  padding:0.1rem;
+  background: @personalcenter_bgcolor;
+  -webkit-box-shadow: @bgshadow2;
+  -moz-box-shadow: @bgshadow2;
+  box-shadow: @bgshadow2;
+  z-index: 10;
+}
+.personalcenter_contents_li_contentselect_uptriangle{
+  position: absolute;
+  left:0.5rem;
+  top:-0.12rem;
+  width:0;
+  height:0;
+  border-left: 0.1rem solid transparent;
+  border-right: 0.1rem solid transparent;
+  border-bottom: 0.12rem solid #FBFBFB;
+  /*-webkit-box-shadow: @bgshadow3;
+  -moz-box-shadow: @bgshadow3;
+  box-shadow: @bgshadow3;*/
+
+}
+
+.personalcenter_contents_li_contentselect_type>li{
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  line-height:0.4rem;
+  height:0.4rem;
+  cursor: pointer;
+}
+.personalcenter_contents_li_contentselect_type>li:hover{
+  background-color: @personalcenter_contents_li_contentselect_typebgcolor;
+}
+.personalcenter_contents_li_contentselect_number{
+  position: absolute;
+  right:0;
+  top:0;
+  height:0.6rem;
+  line-height: 0.6rem;
+  color: @personalcenter_contents_li_contentselect_number;
+  font-size: 0.14rem;
+  font-weight: bold;
+}
+
+.personalcenter_contents_li_content_li{
+  margin-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid @artificial_border;
+  margin-bottom: 0.3rem;
+}
+.personalcenter_contents_li_content_li_havepic>*{
+  float: left;
+}
+.personalcenter_contents_li_contentselect_content_fabu_pic{
+  width:2.2rem;
+  height:1.1rem;
+  border-radius: 0.05rem;
+  overflow: hidden;
+  margin-right: 0.3rem;
+}
+.personalcenter_contents_li_contentselect_content_fabu_title{
+  font-size: 0.18rem;
+  color: @personalcenter_contents_li_contentselect_content_fabu_title;
+  width:4.9rem;
+  height:0.4rem;
+  line-height: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding-top: 0.1rem;
+}
+.personalcenter_contents_li_contentselect_content_fabu_about{
+  height:0.2rem;
+  font-size: 0.14rem;
+  line-height: 0.2rem;
+  color: @personalcenter_contents_li_contentselect_content_fabu_about;
+  position: relative;
+}
+.personalcenter_contents_li_contentselect_content_fabu_about>p{
+  float: left;
+}
+.personalcenter_contents_li_contentselect_content_fabu_type{
+  margin-right: 0.2rem;
+}
+.personalcenter_contents_li_contentselect_content_fabu_typeicon{
+  position: absolute;
+  right:0;
+  top:0;
+  width:0.35rem;
+  height:0.2rem;
+  line-height:0.2rem;
+  text-align: center;
+  font-size: 12px;
+  background: @author_work_type_iconbgcolor;
+  color: @author_work_type_iconfontcolor;
+}
+//无图
+.personalcenter_contents_li_content_li_nopic>.personalcenter_contents_li_contentselect_content_fabu_title{
+  width:100%;
+  height:0.4rem;
+  line-height: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding-top: 0.1rem;
+}
+
+
+//审核中的样式
+.personalcenter_contents_li_artical_review{
+  display: none;
+}
+.personalcenter_contents_li_show{
+  display: block;
+}
+.personalcenter_contents_li_artical_review_lis>li{
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid @personalcenter_contents_li_artical_review_lisborder;
+  margin-bottom: 0.3rem;
+}
+.personalcenter_contents_li_artical_review_lis>li:last-child{
+  margin-bottom: 0;
+}
+.personalcenter_contents_li_artical_review_no_title,.personalcenter_contents_li_artical_review_wait_title{
+  font-size: 0.16rem;
+  color: @personalcenter_contents_li_artical_review_listitle;
+  margin-bottom: 0.1rem;
+  font-weight:500;
+  height:0.2rem;
+  line-height: 0.2rem;
+}
+.personalcenter_contents_li_artical_review_no_tip,.personalcenter_contents_li_artical_review_wait_tip{
+  margin-top: 0.2rem;
+  font-size: 0.14rem;
+  color: @personalcenter_contents_li_artical_review_listip;
+  margin-bottom: 0.1rem;
+}
+.personalcenter_contents_li_artical_review_no_text{
+  color: @personalcenter_contents_li_artical_review_listip;
+  font-size: 0.14rem;
+  border-left: 0.04rem solid @personalcenter_contents_li_artical_review_no_textborder;
+  background:@personalcenter_contents_li_artical_review_no_textbgcolor;
+  height:0.5rem;
+  line-height: 0.5rem;
+  width:7.36rem;
+  margin-bottom: 0.1rem;
+}
+.personalcenter_contents_li_artical_review_no_time,.personalcenter_contents_li_artical_review_wait_type_time{
+  font-size: 0.12rem;
+  color: @personalcenter_contents_li_artical_review_lis_timecolor;
+  height:0.12rem;
+  line-height:0.12rem;
+  margin-top: 0.1rem;
+}
+.personalcenter_contents_li_artical_review_wait_type_time>p{
+  float: left;
+}
+.personalcenter_contents_li_artical_review_wait_type_time>p:first-child{
+  margin-right: 0.2rem;
+}
+
+//评论页新添加样式
+.personalcenter_contents_li_content_lis{
+  //padding-top: 0.2rem;
+  //padding-bottom: 0.5rem;
+}
+.personalcenter_contents_li_content_li_comment{
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid @personalcenter_contents_li_content_li_commentborder;
+  margin-bottom: 0.3rem;
+}
+.personalcenter_contents_li_content_li_comment:last-child{
+  margin-bottom: 0;
+}
+.personalcenter_contents_li_content_li_comment_text{
+  font-size: 0.16rem;
+  color: @personalcenter_contents_li_content_li_comment_text;
+  margin-bottom: 0.2rem;
+  //line-height: 0.18rem;
+  line-height: 0.2rem;
+}
+.personalcenter_contents_li_content_li_comment_from_time{
+  font-size: 0.12rem;
+  height:0.12rem;
+  line-height: 0.12rem;
+  color: @personalcenter_contents_li_content_li_comment_time;
+  position: relative;
+}
+.personalcenter_contents_li_content_li_comment_time{
+  position: absolute;
+  right:0;
+  top:0;
+  font-size: 0.12rem;
+  height:0.12rem;
+  line-height: 0.12rem;
+}
+.personalcenter_contents_li_content_li_comment_time>p{
+  float: left;
+}
+.personalcenter_contents_li_content_li_comment_timedate{
+  margin-right: 0.08rem;
+}
+
+.personalcenter_contents_li_content_li_commentfrom_to{
+  color: @personalcenter_contents_li_content_li_commentfrom_to;
+  font-size: 0.16rem;
+}
+.personalcenter_contents_li_content_li_comment_text{
+  font-size: 0.16rem;
+  color: @personalcenter_contents_li_content_li_comment_text;
+}
+.personalcenter_contents_li_content_li_comment_articalfrom_time{
+  margin-top: 0.2rem;
+  font-size: 0.12rem;
+  color: @personalcenter_contents_li_content_li_comment_time;
+  position: relative;
+}
+.personalcenter_contents_li_content_li_comment_articalfrom_time>p{
+  float: left;
+  font-size: 0.12rem;
+  height:0.12rem;
+  line-height: 0.12rem;
+}
+.personalcenter_contents_li_content_li_comment_artical_time{
+  position: absolute;
+  right:0;
+  top:0;
+  height:0.12rem;
+}
+.personalcenter_contents_li_content_li_comment_artical_time *{
+  height:0.12rem;
+  line-height:0.12rem;
+}
+.personalcenter_contents_li_content_li_comment_artical_time>p{
+  float: left;
+}
+.personalcenter_contents_li_content_li_comment_artical_date{
+  margin-right: 0.08rem;
+}
+
+
+
+
+
+
+
+
+//中间部分结束
+
+//底部样式
+#personal_bottom{
+  //background: #f6f6f6;
+  width: 100%;
+  //padding-bottom: 7px;
+  padding-top: 0;
+  //padding-bottom: 0.3rem;
+  padding-bottom: 77px;
+  font-size: 12px;
+}
+.personal_bottom_content{
+  margin:0 auto;
+  //margin: 0 auto;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.personal_bottom_content>p{
+  //float: left;
+  color: @bottom_content;
+  //font-size: 0.2rem;
+  height:0.2rem;
+  line-height: 0.2rem;
+}
+.personal_bottom_content>p:nth-child(1){
+  margin-right: 0.3rem;
+}

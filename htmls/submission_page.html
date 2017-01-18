@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十跖</title>
+    <!--添加网站关键字、网站描述-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="../images/">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/less" href="../css/all_same_style.less">
+    <link rel="stylesheet" type="text/less" href="../css/submission_page.less">
+    <script src="../js/Less_css.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script>
+        window.onload=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+        window.onresize=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+    </script>
+    <!--富文本编辑器引入三个js文件-->
+    <script type="text/javascript" charset="utf-8" src="../utf8/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../utf8/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="../utf8/lang/zh-cn/zh-cn.js"></script>
+    <link rel="stylesheet" href="../css/self_utf8_style.css">
+</head>
+<body>
+<div id="header" class="clearfloat">
+    <div class="header_logo_navs clearfloat">
+        <div class="header_logo"><a href="../index.html"><img src="../imgages/top_logo.png" alt="10十跖"></a></div>
+        <ul class="header_navs clearfloat">
+            <a href="javascript:void(0)"><li class="header_information clearfloat">
+                <span>资讯</span>
+                <img src="../imgages/顶部导航.png" alt="">
+            </li></a>
+            <a href="javascript:void(0)"><li class="header_hot">热门</li></a>
+            <a href="expert_page.html"><li class="header_konwledgeteam">智囊团</li></a>
+            <div class="information_box">
+                <div class="header_triangle clearfloat"></div>
+                <div class="infor_lis_box">
+                    <ul class="infor_lis_tec">
+                        <a href="javascript:void(0)">
+                            <li class="infor_lis_title infor_lis_title_tec clearfloat">
+                                科技|Technology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                新创|Newly devised
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                大数据|Big data
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                人工智能|AI
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_med">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_med clearfloat">
+                                医疗|Medical
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                临床预防|Clinical prevention
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                医养结合|Hcc
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                医学研究|Medical researc
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_eco">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_eco clearfloat">
+                                生态|Ecology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                民生|He people's livelihood
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                空间|Space
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_fut">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_fut clearfloat">
+                                未来|Future
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                新概念|Newly concept
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                科幻|Science fiction
+                            </li>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div class="header_others clearfloat">
+        <div class="header_search"><a href="search.html"><img src="../imgages/搜索1.png" alt="搜索"></a></div>
+        <div class="header_personal">
+            <a href="personalcenter_articalpage.html">
+                <img class="header_personal_pic" src="../imgages/24px.png" alt="个人头像">
+                <div class="header_personal_status"></div>
+            </a>
+        </div>
+        <div class="header_contribute">
+            <a href="submission_page.html">
+                <img src="../imgages/发布.png" alt="">
+                <span>投稿</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="content_box">
+    <div id="content" class="clearfloat">
+        <div id="submission_box">
+            <p class="submission_title"><span>投稿</span> ></p>
+            <input class="submission_title_ipt" type="text" placeholder="请输入文字标题，1-40个字">
+            <!--富文本编辑区-->
+            <div class="submission_contents_box">
+                <!--<script id="editor" type="text/plain" style=""></script>-->
+            </div>
+            <div class="submission_tips clearfloat">
+                <p>当前已输入<span>23</span>个字符</p>
+                <div class="submission_submit_btn">发布</div>
+                <a class="submission_uptoheader" href="#header"></a>
+            </div>
+
+        </div>
+        <ul id="submission_pic_tip">
+            <li class="submission_pic_upload">
+                <p>图片上传</p>
+                <div class="submission_pic_upload_btn"><input type="file"></div>
+            </li>
+            <li class="submission_pic_upload after_submission_pic_upload">
+                <p>图片上传</p>
+                <div class="after_submission_pic_upload">
+                    <img src="../imgages/111testpic.png" alt="图片查看">
+                </div>
+                <div class="after_submission_pic_upload_deletebtn">
+                </div>
+            </li>
+            <li class="submission_tip">
+                投稿提示
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--打开页面会首先显示的提示内容 点击投稿提示时显示同样内容-->
+<div id="submission_tip_mask">
+    <div class="submission_tip_contentbox">
+        <p>投稿须知</p>
+        <ul class="submission_tip_contentlis">
+            <li>1.十跖欢迎与医疗科技、药品流通、慢病管理、自然科学等领域内的人点话题、企业有关的稿件，科技与医疗为主、兼顾商业、人文。</li>
+            <li>2.十跖对原创稿件给予物资激励，优秀稿件将获一定稿费报酬，并不定期为优秀作者提供各类赞助奖品。</li>
+            <li>3.来稿请标注原创、转载等出处，译文应提供出处。</li>
+            <li>4.不反对作者一稿多投，但鼓励独家供稿。</li>
+            <li>5.杜绝抄袭和杜撰，一经发现立即封号处理。</li>
+            <li>6.投稿时若需咨询，请发电邮wangchengxjb@163.com。</li>
+        </ul>
+        <div class="submission_tip_mask_closebtn">知道了</div>
+    </div>
+</div>
+
+<!--点击发布按钮 显示发布提示操作-->
+<div id="submission_fabu_tips_mask">
+    <div class="submission_fabu_tips_contentbox">
+        <div class="submission_fabu_tips_contentbox_scroll">
+            <p class="submission_fabu_tips_contenttitle">授权设置须知</p>
+            <div class="submission_fabu_tips_content_explain">
+                为了公正公平权利，保护发布者版权，十跖网在稿件发布过程中设置版权确认，请你务必认真填写版权设置，避免产生版权纠纷
+            </div>
+            <ul class="submission_fabu_wx_select">
+                <li>
+                    <div class="submission_fabu_wx_yc clearfloat">
+                        <input type="radio" id="wxyc" name="wx" value="wxyc"><span><label for="wxyc">微信原创标独家授权</label></span>
+                    </div>
+                    <span><label for="wxyc">如您的文章还没在其他公众号上发布，经做确权确认后，十跖网将在PC、微信公众号上标识原创，已确保您的著作权</label></span>
+                </li>
+                <li>
+                    <div class="submission_fabu_wx_bmd clearfloat">
+                        <input type="radio" id="wxbmd" name="wx" value="wxbmd"><span><label for="wxbmd">微信白名单授权</label></span>
+                    </div>
+                    <span><label for="wxbmd">文章已在其他微信平台做原创发布，请给予十跖网微信公众号白名单授权权限，确保十跖网微信公众号能正常发布文章。</label></span>
+                </li>
+            </ul>
+            <ul class="submission_fabu_fromwho_select">
+                <li>
+                    <div class="submission_fabu_from_ycbz clearfloat">
+                        <input type="radio" id="ycbz" name="from" value="ycbz"><span><label for="ycbz">原创标识</label></span>
+                    </div>
+                    <span><label for="ycbz">允许十跖网将您的原创文章授权给予十跖网合作的第三方平台，但保证您的原创文章合法权利。</label></span>
+                </li>
+                <li>
+                    <div class="submission_fabu_from_nmtg clearfloat">
+                        <input type="radio" id="nmtg" name="from" value="nmtg"><span><label for="nmtg">匿名投稿</label></span>
+                    </div>
+                    <span><label for="nmtg">你所上传文章仅代表个人意见，与十跖网无关。若涉及相关法律责任事宜，均有文章发布者个人自负。</label></span>
+                </li>
+                <li class="submission_fabu_fromwho_select_zztg">
+                    <div class="submission_fabu_from_zztg clearfloat">
+                        <input type="radio" id="zztg" name="from" value="zztg"><span><label for="zztg">转载投稿</label></span>
+                    </div>
+                    <span class="submission_fabu_fromwho_select_zztg_special"><label for="zztg">若你的文章是转载、摘抄等方式发布到十跖网。未来进行标记转载来源，涉及到侵权等事宜，均由文章发布者个人自负</label></span>
+                    <input class="submission_fabu_fromwho_select_zztg_fromname" type="text" placeholder="输入转载来源名称">
+                    <input class="submission_fabu_fromwho_select_zztg_fromurl" type="text" placeholder="输入转载来源网址">
+                </li>
+            </ul>
+            <div class="submission_fabu_tips_content_btn">发布</div>
+
+        </div>
+    </div>
+</div>
+
+<!--富文本编辑器js实例化-->
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor',{
+        toolbars: [
+            ['bold', 'italic', 'underline', 'fontsize','link', 'removeformat']
+        ]
+    });
+
+
+    function isFocus(e){
+        alert(UE.getEditor('editor').isFocus());
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function setblur(e){
+        UE.getEditor('editor').blur();
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function insertHtml() {
+        var value = prompt('插入html代码', '');
+        UE.getEditor('editor').execCommand('insertHtml', value)
+    }
+    function createEditor() {
+        enableBtn();
+        UE.getEditor('editor');
+    }
+    function getAllHtml() {
+        alert(UE.getEditor('editor').getAllHtml())
+    }
+    function getContent() {
+        var arr = [];
+        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getContent());
+        alert(arr.join("\n"));
+    }
+    function getPlainTxt() {
+        var arr = [];
+        arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getPlainTxt());
+        alert(arr.join('\n'))
+    }
+    function setContent(isAppendTo) {
+        var arr = [];
+        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+        UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+        alert(arr.join("\n"));
+    }
+    function setDisabled() {
+        UE.getEditor('editor').setDisabled('fullscreen');
+        disableBtn("enable");
+    }
+
+    function setEnabled() {
+        UE.getEditor('editor').setEnabled();
+        enableBtn();
+    }
+
+    function getText() {
+        //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+        var range = UE.getEditor('editor').selection.getRange();
+        range.select();
+        var txt = UE.getEditor('editor').selection.getText();
+        alert(txt)
+    }
+
+    function getContentTxt() {
+        var arr = [];
+        arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+        arr.push("编辑器的纯文本内容为：");
+        arr.push(UE.getEditor('editor').getContentTxt());
+        alert(arr.join("\n"));
+    }
+    function hasContent() {
+        var arr = [];
+        arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+        arr.push("判断结果为：");
+        arr.push(UE.getEditor('editor').hasContents());
+        alert(arr.join("\n"));
+    }
+    function setFocus() {
+        UE.getEditor('editor').focus();
+    }
+    function deleteEditor() {
+        disableBtn();
+        UE.getEditor('editor').destroy();
+    }
+    function disableBtn(str) {
+        var div = document.getElementById('btns');
+        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            if (btn.id == str) {
+                UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+            } else {
+                btn.setAttribute("disabled", "true");
+            }
+        }
+    }
+    function enableBtn() {
+        var div = document.getElementById('btns');
+        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+        }
+    }
+
+    function getLocalData () {
+        alert(UE.getEditor('editor').execCommand( "getlocaldata" ));
+    }
+
+    function clearLocalData () {
+        UE.getEditor('editor').execCommand( "clearlocaldata" );
+        alert("已清空草稿箱")
+    }
+</script>
+
+<script src="../js/submission_page.js"></script>
+<script src="../js/same_action.js"></script>
+</body>
+</html>

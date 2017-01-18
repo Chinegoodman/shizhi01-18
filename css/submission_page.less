@@ -1,0 +1,400 @@
+//less
+//网站中所有的阴影效果
+@bgshadow:inset 0 0 8px 0  #EBEBEB;
+@content_topbarbgcolor:#ffffff;
+@bgcolor:#f6f6f6;
+//资讯列表展开后的颜色样式及侧栏navs颜色
+@top_infor_tec:#62CAFF;
+@top_infor_med:#fd8989;
+@top_infor_eco:#94d816;
+@top_infor_fut:#ffce0a;
+@top_infor_lisbg:#FFF;
+@top_infor_lisbgHover:#F6F6F6;
+
+//中间内容开始
+@content:#FFF;
+
+@submission_title:#333;
+@submission_title_ipt:#B6B6B6;
+@submission_submit_btn:#f8e71c;
+@submission_submit_btnHover:#F4E000;
+@submission_tips:#B6B6B6;
+@submission_uptoheader:#F6F6F6;
+@submission_uptoheaderHover:#333333;
+
+@submission_pic_uploadleftborder:#FF8080;
+@submission_pic_tip:#333;
+
+@after_submission_pic_upload_deletebtn:#E1E1E1;
+@after_submission_pic_upload_deletebtnHover:#FF5D5D;
+@submission_fabu_tips_contenttitle:#333;
+@submission_fabu_tips_contentboxbordercolor:#e1e1e1;
+@submission_fabu_fromwho_select_zztg_special:#f6ab2e;
+@submission_fabu_fromwho_select_zztgplaceholder:#B6B6B6;
+@submission_fabu_fromwho_select_zztg:#333;
+@submission_fabu_fromwho_select_zztgborder:#e8e8e8;
+//轻浮动
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+
+//超出省略号
+.textover_{
+  overflow: hidden; /*自动隐藏文字*/
+  text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+  white-space: nowrap;/*强制不换行*/
+}
+
+/*//默认placeholder样式
+.search_box input::-webkit-input-placeholder{
+  color: @search_box;
+}
+//默认placeholder样式结束
+.search_box input{
+  width:4.8rem;
+  height:0.36rem;
+  font-size: 0.18rem;
+  line-height: 0.36rem;
+  color: @search_boxInput;;
+  background: #F6F6F6;
+  border:none;
+}*/
+
+//内容部分样式
+#content_box{
+  width:100%;
+  padding-bottom: 0.6rem;
+  background: @bgcolor;
+}
+#content{
+  width:9.8rem;
+  margin:0 auto;
+  border-radius: 0.08rem;
+}
+#submission_box,#submission_pic_tip{
+  float: left;
+}
+#submission_box{
+  background: @content;
+  width:6.8rem;
+  padding:0.3rem 0.4rem 0.4rem;
+}
+.submission_title{
+  color: @submission_title;
+  font-size: 0.16rem;
+}
+.submission_title>span{
+  display: inline-block;
+  margin-right: 0.1rem;
+}
+.submission_title_ipt{
+  width:6.8rem;
+  height:0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.25rem;
+  color:@submission_title;
+  outline:none;
+  border:none;
+  cursor: pointer;
+  margin-bottom: 0.1rem;
+}
+.search_box input::-webkit-input-placeholder{
+  color: @submission_title_ipt;
+}
+.submission_tips{
+  margin-top: 0.4rem;
+  height:0.5rem;
+  position: relative;
+}
+.submission_submit_btn{
+  width:2rem;
+  height:0.5rem;
+  line-height: 0.5rem;
+  background: @submission_submit_btn;
+  text-align: center;
+  margin:0 auto;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.submission_submit_btn:hover{
+  background-color: @submission_submit_btnHover;
+}
+.submission_tips>p{
+  float: left;
+  height:0.5rem;
+  font-size: 0.12rem;
+  line-height: 0.5rem;
+  color: @submission_tips;
+}
+.submission_uptoheader{
+  position: absolute;
+  right:0;
+  top:0;
+  width:0.5rem;
+  height:0.5rem;
+  background: @submission_uptoheader url("../imgages/gototop.png") center center no-repeat;
+  border-radius: 50%;
+}
+.submission_uptoheader:hover{
+  background: @submission_uptoheaderHover url("../imgages/gototopHover.png") center center no-repeat;;
+}
+
+.submission_contents_box{
+  margin:0 auto;
+  /*width:6.6rem;
+  height:5rem;*/
+  width:630px;
+  height:450px;
+}
+//右侧
+#submission_pic_tip{
+  margin-left: 0.2rem;
+  width:2rem;
+}
+#submission_pic_tip>li{
+  border-radius: 0.08rem;
+  background: @content;
+}
+.submission_pic_upload{
+  padding:0.3rem 0;
+}
+.submission_pic_upload>p{
+  border-left: 0.04rem solid @submission_pic_uploadleftborder;
+  color: @submission_pic_tip;
+  font-size: 0.16rem;
+  height:0.2rem;
+  line-height: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding-left:0.2rem;
+}
+.submission_pic_upload_btn {
+  width: 1.6rem;
+  height: 0.4rem;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.2rem;
+  background: @submission_submit_btn url("../imgages/upload_pic.png") center center no-repeat;
+}
+.submission_pic_upload_btn>input{
+  width:100%;
+  height:100%;
+  border:none;
+  opacity:0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.submission_pic_upload_btn:hover{
+  background-color: @submission_submit_btnHover;
+}
+.submission_tip{
+  margin-top: 0.2rem;
+  border-radius: 0.25rem;
+  height:0.5rem;
+  width:2rem;
+  text-align: center;
+  line-height:0.5rem;
+  color: @submission_pic_tip;
+  font-size: 0.16rem;
+  cursor: pointer;
+}
+.after_submission_pic_upload{
+  width:2rem;
+  margin:0 auto 0.2rem;
+}
+.after_submission_pic_upload>img{
+  width:100%;
+  height:auto;
+}
+.after_submission_pic_upload_deletebtn{
+  width:0.4rem;
+  height:0.4rem;
+  border-radius: 50%;
+  background: @after_submission_pic_upload_deletebtn url("../imgages/trash.png") center center no-repeat;
+  margin:0 auto;
+  cursor: pointer;
+}
+.after_submission_pic_upload_deletebtn:hover{
+  background-color: @after_submission_pic_upload_deletebtnHover;
+}
+//投稿须知的样式
+#submission_tip_mask{
+  width:100%;
+  height:100%;
+  position: fixed;
+  left:0;
+  top:0;
+  //background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 50;
+}
+.submission_tip_contentbox{
+  width:4.2rem;
+  padding:0.5rem 0.9rem;
+  background: #FFF;
+  border-radius: 0.08rem;
+  position: absolute;
+  top:0.6rem;
+  left:50%;
+  margin-left: -3rem;
+}
+.submission_tip_contentbox>p{
+  font-size: 0.18rem;
+  color: #333;
+  text-align: center;
+  line-height: 0.2rem;
+  height:0.2rem;
+  margin-bottom: 0.4rem;
+}
+.submission_tip_contentlis>li{
+  color: #333;
+  font-size: 0.16rem;
+  line-height: 0.18rem;
+  margin-bottom: 0.3rem;
+}
+.submission_tip_contentlis>li:last-child{
+  margin-bottom: 0;
+}
+.submission_tip_mask_closebtn{
+  width:2rem;
+  height:0.5rem;
+  border-radius: 0.25rem;
+  line-height: 0.5rem;
+  font-size: 0.16rem;
+  background: @submission_submit_btn;
+  margin:0.4rem auto 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+#submission_fabu_tips_mask{
+  width:100%;
+  height:100%;
+  position: fixed;
+  left:0;
+  top:0;
+  //background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.submission_fabu_tips_contentbox{
+  padding:0.5rem;
+  width:5rem;
+  position: absolute;
+  left:50%;
+  top:0.6rem;
+  margin-left: -3rem;
+  background: #FFF;
+  border-radius: 0.08rem;
+  height:5.4rem;
+  //overflow-y: scroll;
+}
+.submission_fabu_tips_contentbox_scroll{
+  width:100%;
+  height:100%;
+  overflow-y: scroll;
+}
+.submission_fabu_tips_contenttitle{
+  font-size: 0.16rem;
+  color: @submission_fabu_tips_contenttitle;
+  margin-bottom: 0.1rem;
+  font-weight: 600;
+  height:0.2rem;
+  line-height: 0.2rem;
+}
+.submission_fabu_tips_content_explain{
+  font-size: 0.16rem;
+  color: @submission_fabu_tips_contenttitle;
+  line-height: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+.submission_fabu_wx_select{
+  padding:0.4rem 0;
+  border-top:1px solid @submission_fabu_tips_contentboxbordercolor;
+  border-bottom:1px solid @submission_fabu_tips_contentboxbordercolor;
+  margin:0.4rem 0;
+}
+.submission_fabu_tips_contentbox_scroll>ul>li{
+  margin-bottom: 0.3rem;
+}
+.submission_fabu_tips_contentbox_scroll>ul>li:last-child{
+  margin-bottom: 0;
+}
+.submission_fabu_tips_contentbox_scroll>ul>li>div>*{
+  //display: inline-block;
+  height:0.2rem;
+  line-height: 0.2rem;
+  font-size: 0.16rem;
+  position: absolute;
+}
+.submission_fabu_tips_contentbox_scroll>ul>li>div{
+  margin-bottom: 0.1rem;
+  position: relative;
+  height:0.2rem;
+}
+.submission_fabu_tips_contentbox_scroll>ul>li>div>input[type=radio]{
+  opacity:0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  margin-right: 0.1rem;
+  left:0;
+  top:0;
+  cursor: pointer;
+  z-index: 10;
+}
+.submission_fabu_tips_contentbox_scroll>ul>li>div>span{
+  left:0;
+  top:0;
+  padding-left: 0.28rem;
+  background: url("../imgages/personal_offselect.jpg") no-repeat;
+}
+.submission_fabu_tips_contentbox_scroll>ul>li>div>input[type=radio]:checked + span{
+  background: url("../imgages/personal_onselect.jpg") no-repeat;
+}
+.submission_fabu_tips_contentbox_scroll>ul>li>span{
+  display: block;
+  padding-left: 0.28rem;
+}
+.submission_fabu_fromwho_select_zztg_special{
+  color: @submission_fabu_fromwho_select_zztg_special;
+  margin-bottom: 0.1rem;
+}
+.submission_fabu_fromwho_select_zztg>input{
+  width:4.5rem;
+  height:0.38rem;
+  line-height: 0.4rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  border-radius: 0.08rem;
+  font-size: 0.14rem;
+  color: @submission_fabu_fromwho_select_zztg;
+  outline:none;
+  border:1px solid @submission_fabu_fromwho_select_zztgborder;
+}
+.submission_fabu_fromwho_select_zztg>input::-webkit-input-placeholder{
+  color: @submission_fabu_fromwho_select_zztgplaceholder;
+}
+.submission_fabu_fromwho_select_zztg_fromname{
+  margin-bottom: 0.1rem;
+}
+.submission_fabu_tips_content_btn{
+  width:2rem;
+  height:0.5rem;
+  border-radius: 0.25rem;
+  background:@submission_submit_btn;
+  color: #000;
+  margin:0.3rem auto 0;
+  text-align: center;
+  line-height: 0.5rem;
+  font-size: 0.16rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.submission_fabu_tips_content_btn:hover{
+  background:@submission_submit_btnHover;
+}
+
+
+//发布前展开的操作项样式
+
+//富文本编辑器自定义样式在self_utf8_sytle.css里
+

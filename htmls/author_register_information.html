@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十跖</title>
+    <!--添加网站关键字、网站描述-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="images/">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/less" href="../css/all_same_style.less">
+    <link rel="stylesheet" type="text/less" href="../css/author_register_information.less">
+    <script src="../js/Less_css.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script>
+        window.onload=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+        window.onresize=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="header" class="clearfloat">
+    <div class="header_logo_navs clearfloat">
+        <div class="header_logo"><a href="../index.html"><img src="../imgages/top_logo.png" alt="10十跖"></a></div>
+        <ul class="header_navs clearfloat">
+            <a href="javascript:void(0)"><li class="header_information clearfloat">
+                <span>资讯</span>
+                <img src="../imgages/顶部导航.png" alt="">
+            </li></a>
+            <a href="javascript:void(0)"><li class="header_hot">热门</li></a>
+            <a href="expert_page.html"><li class="header_konwledgeteam">智囊团</li></a>
+            <div class="information_box">
+                <div class="header_triangle clearfloat"></div>
+                <div class="infor_lis_box">
+                    <ul class="infor_lis_tec">
+                        <a href="javascript:void(0)">
+                            <li class="infor_lis_title infor_lis_title_tec clearfloat">
+                                科技|Technology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                新创|Newly devised
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                大数据|Big data
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                人工智能|AI
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_med">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_med clearfloat">
+                                医疗|Medical
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                临床预防|Clinical prevention
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                医养结合|Hcc
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                医学研究|Medical researc
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_eco">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_eco clearfloat">
+                                生态|Ecology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                民生|He people's livelihood
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                空间|Space
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_fut">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_fut clearfloat">
+                                未来|Future
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                新概念|Newly concept
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                科幻|Science fiction
+                            </li>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div class="header_others clearfloat">
+        <div class="header_search"><a href="search.html"><img src="../imgages/搜索1.png" alt="搜索"></a></div>
+        <div class="header_personal">
+            <a href="personalcenter_articalpage.html">
+                <img class="header_personal_pic" src="../imgages/24px.png" alt="个人头像">
+                <div class="header_personal_status"></div>
+            </a>
+        </div>
+        <div class="header_contribute">
+            <a href="submission_page.html">
+                <img src="../imgages/发布.png" alt="">
+                <span>投稿</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="content_box">
+    <div id="content">
+        <div class="content_nav">
+            <a href="">某某某的个人中心</a> >
+        </div>
+        <form class="content_submit_form" action="">
+            <div class="content_submit clearfloat">
+                <div class="personal_headpic_base_account">
+                    <div class="personal_headpic">
+                        <img src="../imgages/24px@2x.png" alt="个人头像">
+                        <div class="personal_headpic_file_btn clearfloat">
+                            <input type="file">
+                            <div class="personal_headpic_file_btn_mask">设置头像</div>
+                        </div>
+                    </div>
+                    <!--<div class="personal_base_account">
+                        <div class="personal_base_set clearfloat personal_base_account_show">
+                            基本资料
+                            <span>></span>
+                        </div>
+                        <div class="personal_account_set clearfloat">
+                            账户设置
+                            <span>></span>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="personal_base_content">
+                    <div class="personal_base_content_title clearfloat">
+                        <p>账户信息</p>
+                        <img src="../imgages/personal_set_topicon.png" alt="">
+                    </div>
+                    <div class="personal_base_content_name">
+                        <div class="personal_base_content_one_title clearfloat">
+                            <div></div><p>匿名</p>
+                        </div>
+                        <input type="text" readonly placeholder="某某某的匿名">
+                        <!--<div class="personal_base_content_one_confirm clearfloat">
+                            是否将姓名设置所有用户可见
+                            <div class="personal_base_content_one_confirm_select clearfloat personal_base_content_one_confirm_select_on">
+                                <p>on</p>
+                                <p>off</p>
+                                <div class="personal_base_content_one_confirm_select_mask"></div>
+                            </div>
+                        </div>-->
+                    </div>
+                    <!--<div class="personal_base_content_job">
+                        <div class="personal_base_content_one_title clearfloat personal_base_phonenumber_set">
+                            <div></div><p>手机号</p>
+                            <span>此手机号是唯一登陆方式，请妥善保管</span>
+                        </div>
+                        <input type="text" placeholder="请输入您的手机号">
+                    </div>
+                    <div class="personal_base_content_job">
+                        <div class="personal_base_content_one_title clearfloat">
+                            <div></div><p>密码</p>
+                        </div>
+                        <input type="password" placeholder="请输入您的登录密码">
+                    </div>
+                    <div class="personal_base_content_job">
+                        <div class="personal_base_content_one_title clearfloat">
+                            <div></div><p>密码验证</p>
+                        </div>
+                        <input type="password" placeholder="请再次输入登录密码">
+                    </div>
+                    <div class="personal_base_content_title personal_base_content_title2 clearfloat">
+                        <p>基本信息</p>
+                        <img src="../imgages/personal_set_topicon.png" alt="">
+                    </div>-->
+                    <div class="personal_base_content_name">
+                        <div class="personal_base_content_one_title clearfloat ">
+                            <div></div><p>姓名</p>
+                        </div>
+                        <input type="text" readonly placeholder="保密">
+                       <!-- <div class="personal_base_content_one_confirm clearfloat">
+                            是否将姓名设置关注你得用户可见
+                            <div class="personal_base_content_one_confirm_select clearfloat personal_base_content_one_confirm_select_on">
+                                <p>on</p>
+                                <p>off</p>
+                                <div class="personal_base_content_one_confirm_select_mask"></div>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="personal_base_content_sex">
+                        <div class="personal_base_content_one_title clearfloat">
+                            <div></div><p>性别</p>
+                        </div>
+                        <input type="text" readonly placeholder="保密">
+                        <!--<ul class="personal_base_content_sex_select clearfloat">
+                            <li class="clearfloat">
+                                <input type="radio" name="personal_base_content_sex_select" value="M"><span>先生</span>
+                            </li>
+                            <li class="clearfloat">
+                                <input type="radio" name="personal_base_content_sex_select" value="W"><span>女士</span>
+                            </li>
+                            <li class="clearfloat">
+                                <input type="radio" name="personal_base_content_sex_select" value="X"><span>保密</span>
+                            </li>
+                        </ul>-->
+                    </div>
+                    <div class="personal_base_content_job">
+                        <div class="personal_base_content_one_title clearfloat">
+                            <div></div><p>职位</p>
+                        </div>
+                        <input type="text" readonly placeholder="未填写">
+                    </div>
+                    <div class="personal_base_content_company">
+                        <div class="personal_base_content_one_title clearfloat">
+                            <div></div><p>公司</p>
+                        </div>
+                        <input type="text" readonly placeholder="一二三四五六七八">
+                    </div>
+                    <div class="personal_base_content_wx">
+                        <div class="personal_base_content_one_title clearfloat">
+                            <div></div><p>微信</p>
+                        </div>
+                        <input type="text" readonly placeholder="保密">
+                        <!--<div class="personal_base_content_one_confirm clearfloat">
+                            是否将姓名设置所有用户可见
+                            <div class="personal_base_content_one_confirm_select personal_base_content_one_confirm_select_on clearfloat">
+                                <p>on</p>
+                                <p>off</p>
+                                <div class="personal_base_content_one_confirm_select_mask"></div>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="personal_base_content_wb">
+                        <div class="personal_base_content_one_title clearfloat">
+                            <div></div><p>微博</p>
+                        </div>
+                        <input type="text" readonly placeholder="未填写">
+                        <!--<div class="personal_base_content_one_confirm clearfloat">
+                            是否将姓名设置所有用户可见
+                            <div class="personal_base_content_one_confirm_select clearfloat personal_base_content_one_confirm_select_on">
+                                <p>on</p>
+                                <p>off</p>
+                                <div class="personal_base_content_one_confirm_select_mask"></div>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="personal_base_content_email">
+                        <div class="personal_base_content_one_title clearfloat ">
+                            <div></div><p>邮箱</p>
+                        </div>
+                        <input type="text" readonly placeholder="未填写">
+                        <!--<div class="personal_base_content_one_confirm clearfloat">
+                            是否将姓名设置所有用户可见
+                            <div class="personal_base_content_one_confirm_select clearfloat personal_base_content_one_confirm_select_on">
+                                <p>on</p>
+                                <p>off</p>
+                                <div class="personal_base_content_one_confirm_select_mask"></div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--<ul class="content_submitabout_btn clearfloat">
+                    <li>取消</li>
+                    <li><button class="content_submit_btn" type="submit">注册</button></li>
+                </ul>-->
+            </div>
+        </form>
+    </div>
+</div>
+<script src="../js/author_register_information.js"></script>
+<script src="../js/same_action.js"></script>
+</body>
+</html>

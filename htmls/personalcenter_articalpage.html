@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十跖</title>
+    <!--添加网站关键字、网站描述-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="images/">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        /**{ margin:0; padding:0; list-style:none;}
+        a{ text-decoration:none;}
+        a:hover{ text-decoration:none;}*/
+        /*.tcdPageCode{padding: 15px 20px;text-align: left;color: #ccc;text-align:center;}
+        .tcdPageCode a{display: inline-block;color: #428bca;display: inline-block;height: 25px;	line-height: 25px;	padding: 0 10px;border: 1px solid #ddd;	margin: 0 2px;border-radius: 4px;vertical-align: middle;}
+        .tcdPageCode a:hover{text-decoration: none;border: 1px solid #428bca;}
+        .tcdPageCode span.current{display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;color: #fff;background-color: #428bca;	border: 1px solid #428bca;border-radius: 4px;vertical-align: middle;}
+        .tcdPageCode span.disabled{	display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;	color: #bfbfbf;background: #f2f2f2;border: 1px solid #bfbfbf;border-radius: 4px;vertical-align: middle;}*/
+        .tcdPageCode{padding: 0 20px;text-align: left;color: #000;text-align:center;margin:0.4rem 0 0;}
+        .tcdPageCode a{display: inline-block;color: #333;display: inline-block;height: 20px;width:20px;	line-height: 20px;	border-radius: 50%;	margin: 0 10px;text-align: center;vertical-align: middle;background-color: #FFF;}
+        .tcdPageCode a:hover{background-color: #FFEA00;}
+        .tcdPageCode span.current{display: inline-block;height: 20px;width:20px;line-height: 20px;margin: 0 2px;color: #333;background-color: #F4E000;	border-radius: 50%;text-align: center; vertical-align: middle;}
+        .tcdPageCode span.disabled{	display: inline-block;height: 20px;line-height: 20px;padding: 0 10px;margin: 0 2px;	color: #333;background: #FFF; vertical-align: middle;}
+    </style>
+    <link rel="stylesheet" type="text/less" href="../css/all_same_style.less">
+    <link rel="stylesheet" type="text/less" href="../css/personalcenter_artical.less">
+    <script src="../js/Less_css.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/jquery.page.js"></script>
+    <script>
+        window.onload=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+        window.onresize=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="header" class="clearfloat">
+    <div class="header_logo_navs clearfloat">
+        <div class="header_logo"><a href="../index.html"><img src="../imgages/top_logo.png" alt="10十跖"></a></div>
+        <ul class="header_navs clearfloat">
+            <a href="javascript:void(0)"><li class="header_information clearfloat">
+                <span>资讯</span>
+                <img src="../imgages/顶部导航.png" alt="">
+            </li></a>
+            <a href="javascript:void(0)"><li class="header_hot">热门</li></a>
+            <a href="expert_page.html"><li class="header_konwledgeteam">智囊团</li></a>
+            <div class="information_box">
+                <div class="header_triangle clearfloat"></div>
+                <div class="infor_lis_box">
+                    <ul class="infor_lis_tec">
+                        <a href="javascript:void(0)">
+                            <li class="infor_lis_title infor_lis_title_tec clearfloat">
+                                科技|Technology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                新创|Newly devised
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                大数据|Big data
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                人工智能|AI
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_med">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_med clearfloat">
+                                医疗|Medical
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                临床预防|Clinical prevention
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                医养结合|Hcc
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                医学研究|Medical researc
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_eco">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_eco clearfloat">
+                                生态|Ecology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                民生|He people's livelihood
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                空间|Space
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_fut">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_fut clearfloat">
+                                未来|Future
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                新概念|Newly concept
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                科幻|Science fiction
+                            </li>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div class="header_others clearfloat">
+        <div class="header_search"><a href="search.html"><img src="../imgages/搜索1.png" alt="搜索"></a></div>
+        <div class="header_personal">
+            <a href="personalcenter_articalpage.html">
+                <img class="header_personal_pic" src="../imgages/24px.png" alt="个人头像">
+                <div class="header_personal_status"></div>
+            </a>
+        </div>
+        <div class="header_contribute">
+            <a href="submission_page.html">
+                <img src="../imgages/发布.png" alt="">
+                <span>投稿</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="content_box" class="clearfloat">
+    <div id="content">
+        <div id="contents" class="clearfloat">
+            <div class="personalcenter_top clearfloat">
+                <ul class="personalcenter_edit_more clearfloat">
+                    <li class="personalcenter_edit clearfloat">
+                        <div class="personalcenter_edit_iconbox">
+                            <img src="../imgages/personal_edit.png" alt="">
+                        </div>
+                        <div class="personalcenter_edit_tips personalcenter_onoff_tips">
+                            <div class="personalcenter_up_triangle"></div>
+                            <p>修改资料</p>
+                        </div>
+                    </li>
+                    <li class="personalcenter_more clearfloat">
+                        <div class="personalcenter_more_iconbox">
+                            <img src="../imgages/personal_more.png" alt="">
+                        </div>
+                        <div class="personalcenter_more_tips personalcenter_onoff_tips">
+                            <div class="personalcenter_up_triangle"></div>
+                            <p>疑问解答</p>
+                            <p>安全退出</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="personal_name_pic_more">
+                    <div class="personal_name_job_more">
+                        <p class="personal_name">一二三四五六七八九</p>
+                        <p class="personal_workplace">北京协和一盒大学出版社出版社出版社</p>
+                        <p class="personal_job">职位职位职位</p>
+                    </div>
+                </div>
+                <div class="personal_pic_box clearfloat">
+                    <img class="personal_pic_special_icon" src="../imgages/Hi_personalicon.png" alt="">
+                    <div class="personal_pic">
+                        <img src="../imgages/author_pic.png" alt="个人头像">
+                    </div>
+                </div>
+                <ul class="personalcenter_top_lis clearfloat">
+                    <li class="personalcenter_top_lis_artical personalcenter_top_lis_select">
+                        <p>999999</p>
+                        <div class="personalcenter_top_lis_artical_about clearfloat">
+                            <p>文章</p>
+                            <div class="personalcenter_top_lis_msgtips"></div>
+                        </div>
+                    </li>
+                    <li class="personalcenter_top_lis_comment">
+                        <p>999999</p>
+                        <div class="personalcenter_top_lis_comment_about clearfloat">
+                            <p>评论</p>
+                            <div class="personalcenter_top_lis_msgtips"></div>
+                        </div>
+                    </li>
+                    <li class="personalcenter_top_lis_msg">
+                        <p>999999</p>
+                        <div class="personalcenter_top_lis_msg_about clearfloat">
+                            <p>消息</p>
+                            <div class="personalcenter_top_lis_msgtips"></div>
+                        </div>
+                    </li>
+                    <li class="personalcenter_top_lis_follow">
+                        <p>999999</p>
+                        <div class="personalcenter_top_lis_follow_about clearfloat">
+                            <p>关注</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="personalcenter_contents">
+                <ul class="personalcenter_contents_lis">
+
+
+                    <div class="personalcenter_contents_li_contentselect clearfloat">
+                        <div class="personalcenter_top_lis_msgtips"></div>
+                        <p class="personalcenter_top_lis_title">已发布</p>
+                        <div class="personalcenter_contents_li_contentselect_more clearfloat">
+                            <img class="personalcenter_contents_li_contentselect_more_icon" src="../imgages/personal_set_topicon.png" alt="">
+                            <ul class="personalcenter_contents_li_contentselect_type clearfloat">
+                                <div class="personalcenter_contents_li_contentselect_uptriangle"></div>
+                                <li class="personalcenter_contents_li_contentselect_type_out">已发布</li>
+                                <li class="personalcenter_contents_li_contentselect_type_noout">
+                                    <div class="personalcenter_top_lis_msgtips"></div>
+                                    <span>审核中</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="personalcenter_contents_li_contentselect_number"><span>123</span>篇</p>
+                    </div>
+                    <!--已发布文章的样式-->
+                    <li class="personalcenter_contents_li_artical personalcenter_contents_li_show">
+                        <div class="personalcenter_contents_li_contentselect_content">
+                            <!--发布的内容-->
+                            <div class="personalcenter_contents_li_contentselect_content_fabu">
+                                <ul class="personalcenter_contents_li_content_lis">
+                                    <!--有图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_havepic clearfloat">
+                                        <img class="personalcenter_contents_li_contentselect_content_fabu_pic" src="../imgages/112testpic.png" alt="">
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_text">
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                                特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                            </p>
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                                <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                                <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                    <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--无图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_nopic">
+                                        <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                            特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                        </p>
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                            <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--有图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_havepic clearfloat">
+                                        <img class="personalcenter_contents_li_contentselect_content_fabu_pic" src="../imgages/112testpic.png" alt="">
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_text">
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                                特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                            </p>
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                                <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                                <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                    <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--无图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_nopic">
+                                        <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                            特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                        </p>
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                            <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--有图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_havepic clearfloat">
+                                        <img class="personalcenter_contents_li_contentselect_content_fabu_pic" src="../imgages/112testpic.png" alt="">
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_text">
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                                特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                            </p>
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                                <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                                <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                    <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--无图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_nopic">
+                                        <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                            特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                        </p>
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                            <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--有图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_havepic clearfloat">
+                                        <img class="personalcenter_contents_li_contentselect_content_fabu_pic" src="../imgages/112testpic.png" alt="">
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_text">
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                                特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                            </p>
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                                <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                                <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                    <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--无图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_nopic">
+                                        <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                            特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                        </p>
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                            <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--有图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_havepic clearfloat">
+                                        <img class="personalcenter_contents_li_contentselect_content_fabu_pic" src="../imgages/112testpic.png" alt="">
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_text">
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                                特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                            </p>
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                                <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                                <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                    <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--无图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_nopic">
+                                        <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                            特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                        </p>
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                            <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--有图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_havepic clearfloat">
+                                        <img class="personalcenter_contents_li_contentselect_content_fabu_pic" src="../imgages/112testpic.png" alt="">
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_text">
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                                特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                            </p>
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                                <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                                <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                                <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                    <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--无图片-->
+                                    <li class="personalcenter_contents_li_content_li personalcenter_contents_li_content_li_nopic">
+                                        <p class="personalcenter_contents_li_contentselect_content_fabu_title">
+                                            特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普特朗普
+                                        </p>
+                                        <div class="personalcenter_contents_li_contentselect_content_fabu_about clearfloat">
+                                            <div class="personalcenter_contents_li_contentselect_content_fabu_typeicon">原创</div>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_type"><span>科技</span>&#124;<span>Technology</span></p>
+                                            <p class="personalcenter_contents_li_contentselect_content_fabu_time"><span>2016</span>-<span>12</span>-<span>21</span></p>
+                                            <div class="personalcenter_contents_li_content_li_deletebtn clearfloat">
+                                                <div class="personalcenter_contents_li_content_li_deletebtntips">删除</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--翻页插件-->
+                                    <!--<div class="tcdPageCode"></div>-->
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <!--审核中文章的样式-->
+                    <li class="personalcenter_contents_li_artical_review">
+                        <ul class="personalcenter_contents_li_artical_review_lis">
+                            <!--未通过的文章-->
+                            <li class="personalcenter_contents_li_artical_review_no">
+                                <p class="personalcenter_contents_li_artical_review_no_title">
+                                    《企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化》
+                                </p>
+                                <div class="personalcenter_contents_li_artical_review_no_tip">你的文章未通过审核，理由如下：</div>
+                                <div class="personalcenter_contents_li_artical_review_no_text">
+                                    文章的内容与十跖网略有出入，感谢您对十跖网的支持！
+                                </div>
+                                <div class="personalcenter_contents_li_artical_review_no_time clearfloat">
+                                    <span>2012</span>-<span>12</span>-<span>25</span>
+                                </div>
+                            </li>
+                            <!--等待审核-->
+                            <li class="personalcenter_contents_li_artical_review_wait">
+                                <p class="personalcenter_contents_li_artical_review_wait_title">
+                                    《企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化》
+                                </p>
+                                <div class="personalcenter_contents_li_artical_review_wait_type_time clearfloat">
+                                    <p><span>科技</span> &#124; <span>Techonlogy</span></p>
+                                    <p><span>2012</span>-<span>12</span>-<span>25</span></p>
+                                </div>
+                                <p class="personalcenter_contents_li_artical_review_wait_tip">你的文章正在审核中...</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="personal_bottom">
+    <div class="personal_bottom_content clearfloat">
+        <p>北京罗兰雅科技有限公司</p><p>Copyright &copy; 十跖网</p><p>京ICP备12013432号-1京公网备案</p><p>11010102001402号</p>
+    </div>
+</div>
+
+<div id="bottom">
+    <div class="bottom_content clearfloat">
+        <div class="back_top">
+            <div class="bottom_imgbox"><img src="../imgages/置顶1.png" alt=""></div>
+            <div class="img_tips">
+                <p>置顶</p>
+                <div class="down_triangle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--翻页插件-->
+<script>
+    $(".tcdPageCode").createPage({
+        pageCount:99,
+        current:1,
+        backFn:function(p){
+            //console.log(p);
+        }
+    });
+</script>
+<script src="../js/personalcenter_artical.js"></script>
+<script src="../js/same_action.js"></script>
+</body>
+</html>

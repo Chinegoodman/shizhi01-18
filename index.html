@@ -1,0 +1,871 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十跖</title>
+    <!--添加网站关键字、网站描述-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="images/">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="swiper/swiper-3.3.1.min.css">
+    <link rel="stylesheet" type="text/less" href="css/all_same_style.less">
+    <link rel="stylesheet" type="text/less" href="css/index.less">
+    <script src="js/Less_css.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="swiper/swiper-3.3.1.min.js"></script>
+    <script>
+        window.onload=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+        window.onresize=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="header" class="clearfloat">
+    <div class="header_logo_navs clearfloat">
+        <div class="header_logo"><a href="index.html"><img src="imgages/top_logo.png" alt="10十跖"></a></div>
+        <ul class="header_navs clearfloat">
+            <a href="javascript:void(0)"><li class="header_information clearfloat">
+                <span>资讯</span>
+                <img src="imgages/顶部导航.png" alt="">
+            </li></a>
+            <!--<li class="header_new">最新</li>-->
+            <a href="javascript:void(0)"><li class="header_hot">热门</li></a>
+            <a href="htmls/expert_page.html"><li class="header_konwledgeteam">智囊团</li></a>
+            <div class="information_box">
+                <div class="header_triangle clearfloat"></div>
+                <div class="infor_lis_box">
+                    <ul class="infor_lis_tec">
+                        <a href="javascript:void(0)">
+                            <li class="infor_lis_title infor_lis_title_tec clearfloat">
+                                科技|Technology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="htmls/index_lis_show.html">
+                            <li>
+                                新创|Newly devised
+                            </li>
+                        </a>
+                        <a href="htmls/index_lis_show.html">
+                            <li>
+                                大数据|Big data
+                            </li>
+                        </a>
+                        <a href="htmls/index_lis_show.html">
+                            <li>
+                                人工智能|AI
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_med">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_med clearfloat">
+                                医疗|Medical
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="htmls/index_lis_show.html">
+                            <li>
+                                临床预防|Clinical prevention
+                            </li>
+                        </a>
+                        <a href="htmls/index_lis_show.html">
+                            <li>
+                                医养结合|Hcc
+                            </li>
+                        </a>
+                        <a href="htmls/index_lis_show.html">
+                            <li>
+                                医学研究|Medical researc
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_eco">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_eco clearfloat">
+                                生态|Ecology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="htmls/index_lis_show.html">
+                            <li>
+                                民生|He people's livelihood
+                            </li>
+                        </a>
+                        <a href="htmls/index_lis_show.html">
+                            <li>
+                                空间|Space
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_fut">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_fut clearfloat">
+                                未来|Future
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="htmls/index_lis_show.html">
+                            <li>
+                                新概念|Newly concept
+                            </li>
+                        </a>
+                        <a href="htmls/index_lis_show.html">
+                            <li>
+                                科幻|Science fiction
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div class="header_others clearfloat">
+        <div class="header_search"><a href="htmls/search.html"><img src="imgages/搜索1.png" alt="搜索"></a></div>
+        <div class="header_personal">
+            <a href="htmls/personalcenter_articalpage.html">
+                <img class="header_personal_pic" src="imgages/24px.png" alt="个人头像">
+                <div class="header_personal_status"></div>
+            </a>
+        </div>
+        <div class="header_contribute">
+            <a href="htmls/submission_page.html">
+                <img src="imgages/发布.png" alt="">
+                <span>投稿</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="content_box" class="clearfloat">
+    <div id="content" class="clearfloat">
+        <div id="content_topbar" class="clearfloat same_shadow">
+            <!--swiper滚动-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href=""><img src="imgages/2.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href=""><img src="imgages/2.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href=""><img src="imgages/2.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href=""><img src="imgages/2.jpg" alt=""></a></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <!--<div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>-->
+                 <!--如果需要滚动条 -->
+                <!--<div class="swiper-scrollbar"></div>-->
+            </div>
+        </div>
+        <div id="contents" class="clearfloat">
+            <div id="slidenavs">
+                <div class="infor_lis_box slidenavsinfor_lis_box">
+                    <ul class="infor_lis_tec slidenavsinfor_lis_tec">
+                        <li class="infor_lis_title infor_lis_title_tec clearfloat">
+                            科技|Technology
+                            <img class="infor_lis_open_icon" src="imgages/栏目导航.png" alt="">
+                        </li>
+                        <li>
+                            新创|Newly devised
+                            <a href="htmls/index_lis_show.html"></a>
+                        </li>
+                        <li>
+                            大数据|Big data
+                            <a href="htmls/index_lis_show.html"></a>
+                        </li>
+                        <li>
+                            人工智能|AI
+                            <a href="htmls/index_lis_show.html"></a>
+                        </li>
+                    </ul>
+                    <ul class="infor_lis_med slidenavsinfor_lis_med">
+                        <li class="infor_lis_title infor_lis_title_med clearfloat">
+                            医疗|Medical
+                            <img class="infor_lis_open_icon" src="imgages/栏目导航.png" alt="">
+                        </li>
+                        <li>
+                            临床预防|Clinical prevention
+                            <a href="htmls/index_lis_show.html"></a>
+                        </li>
+                        <li>
+                            医养结合|Hcc
+                            <a href="htmls/index_lis_show.html"></a>
+                        </li>
+                        <li>
+                            医学研究|Medical researc
+                            <a href="htmls/index_lis_show.html"></a>
+                        </li>
+                    </ul>
+                    <ul class="infor_lis_eco slidenavsinfor_lis_eco">
+                        <li class="infor_lis_title infor_lis_title_eco clearfloat">
+                            生态|Ecology
+                            <img class="infor_lis_open_icon" src="imgages/栏目导航.png" alt="">
+                        </li>
+                        <li>
+                            民生|He people's livelihood
+                            <a href="htmls/index_lis_show.html"></a>
+                        </li>
+                        <li>
+                            空间|Space
+                            <a href="htmls/index_lis_show.html"></a>
+                        </li>
+                    </ul>
+                    <ul class="infor_lis_fut slidenavsinfor_lis_fut">
+                        <li class="infor_lis_title infor_lis_title_fut clearfloat">
+                            未来|Future
+                            <img class="infor_lis_open_icon" src="imgages/栏目导航.png" alt="">
+                        </li>
+                        <li>
+                            新概念|Newly concept
+                            <a href="htmls/index_lis_show.html"></a>
+                        </li>
+                        <li>
+                            科幻|Science fiction
+                            <a href="htmls/index_lis_show.html"></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="slidenavs_others">
+                    <ul class="slidenavs_company clearfloat">
+                        <li><a href="javascript:(0)">关于我们</a></li>
+                        <li><a href="javascript:(0)">加入我们</a></li>
+                        <li><a href="javascript:(0)">合作伙伴</a></li>
+                        <li><a href="javascript:(0)">广告及服务</a></li>
+                        <li><a href="javascript:(0)">常见问题解答</a></li>
+                    </ul>
+                    <ul class="slidenavs_company_id">
+                        <li>北京罗来雅科技有限公司</li>
+                        <li>Copyright &copy; 十跖网 京ICP备</li>
+                        <li>12013432号-1</li>
+                        <li>京公网安备 11010102001402号</li>
+                    </ul>
+                </div>
+            </div>
+            <!--首页打开时的内容部分-->
+            <ul class="index_show contents_lis clearfloat">
+                <!--瀑布流左边-->
+                <div class="contents_li_left clearfloat">
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/111testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                企业和政策制定者都在为特朗普当选美国总统之后的贸易政策变更而做着准备。特朗普已经明确表示将会
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <!--无图片-->
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <p class="contents_li_txt contents_li_txt_nopic">
+                                企业和政策制定者都在为特朗普当选美国总统之后的贸易政策变更而做着准备。特朗普已经明确表示将会
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/111testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                企业和政策制定者都在为特朗普当选美国总统之后的贸易政策变更而做着准备。特朗普已经明确表示将会
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/111testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                测试一下测试一下测试一下测试一下测试一一下测试一下测试一下测试
+                                一下测试一下测试一下测试一下测试一下测试一下测试一下测试一下测
+                                测试一下测试一下测试一下测试一下测试一下测试一下试一下
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/111testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                企业和政策制定者都在为特朗普当选美国总统之后的贸易政策变更而做着准备。特朗普已经明确表示将会
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/111testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                测试一下测试一下测试一下测试一下测试一一下测试一下测试一下测试
+                                一下测试一下测试一下测试一下测试一下测试一下测试一下测试一下测
+                                测试一下测试一下测试一下测试一下测试一下测试一下试一下
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <!--瀑布流右边-->
+                <div class="contents_li_right clearfloat">
+                    <!--无评论-->
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/112testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                企业和政策制定者都在为特朗普当选美国总统之后的贸易政策变更而做着准备。特朗普已经明确表示将会
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <!--<div class="contents_li_leavemessage_reader clearfloat">
+                            <div class="contents_li_triangle"></div>
+                            <ul class="contents_li_leavemessage_readers clearfloat">
+                                <li><img src="imgages/24px@2x.png" alt=""></li>
+                                <li><img src="imgages/24px@2x.png" alt=""></li>
+                                <li><img src="imgages/24px@2x.png" alt=""></li>
+                            </ul>
+                        </div>-->
+                    </li>
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/111testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                企业和政策制定者都在为特朗普当选美国总统之后的贸易政策变更而做着准备。特朗普已经明确表示将会
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/111testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                企业和政策制定者都在为特朗普当选美国总统之后的贸易政策变更而做着准备。特朗普已经明确表示将会
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/111testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                测试一下测试一下测试一下测试一下测试一一下测试一下测试一下测试
+                                一下测试一下测试一下测试一下测试一下测试一下测试一下测试一下测
+                                测试一下测试一下测试一下测试一下测试一下测试一下试一下
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/111testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                企业和政策制定者都在为特朗普当选美国总统之后的贸易政策变更而做着准备。特朗普已经明确表示将会
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contents_li same_shadow">
+                        <a href="htmls/artical_page.html">
+                            <img class="contents_li_img" src="imgages/111testpic.png" alt="">
+                            <p class="contents_li_txt">
+                                企业和政策制定者都在为特朗普当选美国总统之后的贸易政策变更而做着准备。特朗普已经明确表示将会
+                            </p>
+                            <div class="contents_li_author clearfloat">
+                                <img class="contents_li_author_pic" src="imgages/author.png" alt="">
+                                <div class="contents_li_author_name_type">
+                                    <p class="contents_li_author_name">一二三四五六七八九</p>
+                                    <div class="contents_li_author_type clearfloat">
+                                        <span>科技 | Technology</span>
+                                        <div class="publishi_time">
+                                            30分钟前
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="contents_li_author_tags clearfloat">
+                                    <li class="contents_li_author_tags_new">New</li>
+                                    <li class="contents_li_author_tags_self">原创</li>
+                                </ul>
+                            </div>
+                            <div class="contents_li_leavemessage_reader clearfloat">
+                                <div class="contents_li_triangle"></div>
+                                <ul class="contents_li_leavemessage_readers clearfloat">
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                    <li><img src="imgages/24px@2x.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+            <div class="right_know_popu">
+                <!--<div class="right_knowledge right_audio_connectcontents">
+                    <div class="right_audio_connectcontents_author_pic_name clearfloat">
+                        <img class="right_audio_connectcontents_author_pic" src="imgages/24px@2x.png" alt="个人头像">
+                        <div class="right_audio_connectcontents_author_nameothers">
+                            <p class="right_audio_connectcontents_author_name textover_">一二三四五六七八九</p>
+                            <p class="right_audio_connectcontents_author_wznumber"><span>99999</span> 篇文章</p>
+                        </div>
+                    </div>
+                    <ul class="right_audio_connectcontents_sendmsg_follow clearfloat">
+                        <li class="right_audio_connectcontents_sendmsg clearfloat">
+                            <div class="right_audio_connectcontents_imgbox">
+                                <img src="imgages/sendmsg.png" alt="发私信">
+                            </div>
+                            <div class="right_author_img_tips right_author_img_tips_sendmsg clearfloat">
+                                <div class="up_triangle"></div>
+                                <p>给TA发私信</p>
+                            </div>
+                        </li>
+                        <li class="right_audio_connectcontents_follow clearfloat">
+                            <div class="right_audio_connectcontents_imgbox">
+                                <img src="imgages/onfocus.png" alt="关注">
+                            </div>
+                            <div class="right_author_img_tips right_author_img_tips_follow clearfloat">
+                                <div class="up_triangle"></div>
+                                <p>关注</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>-->
+                <div class="right_knowledge">
+                    <p class="right_knowledge_title">智囊团 &#124; The think tank</p>
+                    <ul class="right_knowledge_lis">
+                        <li class="right_knowledge_author clearfloat">
+                            <img src="imgages/author_pic.png" alt="" class="right_knowledgeauthor_pic">
+                            <div class="right_knowledgeauthor_about">
+                                <div class="right_knowledgeauthor_name_icon clearfloat">
+                                    <p class="right_knowledgeauthor_name textover_ ">一二三四五六七八九</p>
+                                    <img src="imgages/right_knowledgeauthor_icon.png" alt="">
+                                </div>
+                                <p class="right_knowledgeauthor_unit textover_">北京协和医院大学出版社啊faeawfawefeaefawfwea</p>
+                                <div class="right_knowledgeauthor_num">
+                                    <span>99,999</span>篇文章
+                                </div>
+                            </div>
+                        </li>
+                        <li class="right_knowledge_author clearfloat">
+                            <img src="imgages/author_pic.png" alt="" class="right_knowledgeauthor_pic">
+                            <div class="right_knowledgeauthor_about">
+                                <div class="right_knowledgeauthor_name_icon clearfloat">
+                                    <p class="right_knowledgeauthor_name textover_ ">一二三</p>
+                                    <img src="imgages/right_knowledgeauthor_icon.png" alt="">
+                                </div>
+                                <p class="right_knowledgeauthor_unit textover_">北京协和医院大学出版社啊</p>
+                                <div class="right_knowledgeauthor_num">
+                                    <span>99,999</span>篇文章
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right_knowledge right_popularart">
+                    <p class="right_knowledge_title right_popularart_title">热门 &#124; Popular articles</p>
+                    <ul class="right_popularart_lis">
+                        <li class="right_popularart_hot">
+                            <img class="right_popularart_hot_pic" src="imgages/hot_pic.png" alt="">
+                            <p class="right_popularart_hot_title textover_">如果您的文章此前没有在微信平大而非挖坟挖而发</p>
+                            <div class="right_popularart_hot_type_time clertfloat">
+                                <p class="right_popularart_hot_type">科技 &#124; Technology</p>
+                                <div class="right_popularart_hot_time">
+                                    <span>2015</span>-<span>10</span>-<span>23</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="right_popularart_hot">
+                            <img class="right_popularart_hot_pic" src="imgages/hot_pic.png" alt="">
+                            <p class="right_popularart_hot_title textover_">如果您的文章此前没有在微信平发而为福娃</p>
+                            <div class="right_popularart_hot_type_time clertfloat">
+                                <p class="right_popularart_hot_type">科技 &#124; Technology</p>
+                                <div class="right_popularart_hot_time">
+                                    <span>2015</span>-<span>10</span>-<span>23</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="progressbar_box">
+            <p>50%</p>
+            <div class="progressbar clearfloat"><p>..</p></div>
+        </div>
+    </div>
+</div>
+<div id="bottom">
+    <div class="bottom_content clearfloat">
+        <div class="connect clearfloat">
+            <div class="connect_wx">
+                <div class="bottom_imgbox"><img src="imgages/微信1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>官方微信</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="connect_wb">
+                <div class="bottom_imgbox"><img src="imgages/微博1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>微博分享</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="connect_feedback">
+                <div class="bottom_imgbox"><img src="imgages/反馈1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>意见反馈</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="back_top">
+            <div class="bottom_imgbox"><img src="imgages/置顶1.png" alt=""></div>
+            <div class="img_tips">
+                <p>置顶</p>
+                <div class="down_triangle"></div>
+            </div>
+        </div>
+        <!--<div class="person_abouts clearfloat">
+            <div class="person_sendmsg">
+                <div class="bottom_imgbox"><img src="imgages/私信1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>给TA发私信</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="person_follow">
+                <div class="bottom_imgbox"><img src="imgages/关注1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>关注</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="person_tip-off_details">
+                <div class="bottom_imgbox"><img src="imgages/更多1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>详细资料</p>
+                    <p>举报</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="person_edit">
+                <div class="bottom_imgbox"><img src="imgages/修改1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>编辑资料</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="person_quit">
+                <div class="bottom_imgbox"><img src="imgages/更多1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>安全退出</p>
+                    <p>疑问解答</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</div>
+<script src="js/same_action.js"></script>
+<script src="js/index.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        //分页器点击切换
+        paginationClickable :true,
+        //环路
+        loop : true,
+//            自动切换
+        autoplay : 4000,
+        // 如果需要前进后退按钮
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+
+        // 如果需要滚动条
+//            scrollbar: '.swiper-scrollbar',
+    })
+</script>
+</body>
+</html>

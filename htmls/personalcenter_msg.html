@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十跖</title>
+    <!--添加网站关键字、网站描述-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="images/">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/less" href="../css/all_same_style.less">
+    <link rel="stylesheet" type="text/less" href="../css/personalcenter_msg.less">
+    <script src="../js/Less_css.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script>
+        window.onload=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+        window.onresize=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="header" class="clearfloat">
+    <div class="header_logo_navs clearfloat">
+        <div class="header_logo"><a href="../index.html"><img src="../imgages/top_logo.png" alt="10十跖"></a></div>
+        <ul class="header_navs clearfloat">
+            <a href="javascript:void(0)"><li class="header_information clearfloat">
+                <span>资讯</span>
+                <img src="../imgages/顶部导航.png" alt="">
+            </li></a>
+            <a href="javascript:void(0)"><li class="header_hot">热门</li></a>
+            <a href="expert_page.html"><li class="header_konwledgeteam">智囊团</li></a>
+            <div class="information_box">
+                <div class="header_triangle clearfloat"></div>
+                <div class="infor_lis_box">
+                    <ul class="infor_lis_tec">
+                        <a href="javascript:void(0)">
+                            <li class="infor_lis_title infor_lis_title_tec clearfloat">
+                                科技|Technology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                新创|Newly devised
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                大数据|Big data
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                人工智能|AI
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_med">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_med clearfloat">
+                                医疗|Medical
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                临床预防|Clinical prevention
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                医养结合|Hcc
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                医学研究|Medical researc
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_eco">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_eco clearfloat">
+                                生态|Ecology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                民生|He people's livelihood
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                空间|Space
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_fut">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_fut clearfloat">
+                                未来|Future
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                新概念|Newly concept
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                科幻|Science fiction
+                            </li>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div class="header_others clearfloat">
+        <div class="header_search"><a href="search.html"><img src="../imgages/搜索1.png" alt="搜索"></a></div>
+        <div class="header_personal">
+            <a href="personalcenter_articalpage.html">
+                <img class="header_personal_pic" src="../imgages/24px.png" alt="个人头像">
+                <div class="header_personal_status"></div>
+            </a>
+        </div>
+        <div class="header_contribute">
+            <a href="submission_page.html">
+                <img src="../imgages/发布.png" alt="">
+                <span>投稿</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="content_box" class="clearfloat">
+    <div id="content">
+        <div id="contents" class="clearfloat">
+            <div class="personalcenter_top clearfloat">
+                <ul class="personalcenter_edit_more clearfloat">
+                    <li class="personalcenter_edit clearfloat">
+                        <div class="personalcenter_edit_iconbox">
+                            <img src="../imgages/personal_edit.png" alt="">
+                        </div>
+                        <div class="personalcenter_edit_tips personalcenter_onoff_tips">
+                            <div class="personalcenter_up_triangle"></div>
+                            <p>修改资料</p>
+                        </div>
+                    </li>
+                    <li class="personalcenter_more clearfloat">
+                        <div class="personalcenter_more_iconbox">
+                            <img src="../imgages/personal_more.png" alt="">
+                        </div>
+                        <div class="personalcenter_more_tips personalcenter_onoff_tips">
+                            <div class="personalcenter_up_triangle"></div>
+                            <p>疑问解答</p>
+                            <p>安全退出</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="personal_name_pic_more">
+                    <div class="personal_name_job_more">
+                        <p class="personal_name">一二三四五六七八九</p>
+                        <p class="personal_workplace">北京协和一盒大学出版社出版社出版社</p>
+                        <p class="personal_job">职位职位职位</p>
+                    </div>
+                </div>
+                <div class="personal_pic_box clearfloat">
+                    <img class="personal_pic_special_icon" src="../imgages/Hi_personalicon.png" alt="">
+                    <div class="personal_pic">
+                        <img src="../imgages/author_pic.png" alt="个人头像">
+                    </div>
+                </div>
+                <ul class="personalcenter_top_lis clearfloat">
+                    <li class="personalcenter_top_lis_artical">
+                        <p>999999</p>
+                        <div class="personalcenter_top_lis_artical_about clearfloat">
+                            <p>文章</p>
+                            <div class="personalcenter_top_lis_msgtips"></div>
+                        </div>
+                    </li>
+                    <li class="personalcenter_top_lis_comment">
+                        <p>999999</p>
+                        <div class="personalcenter_top_lis_comment_about clearfloat">
+                            <p>评论</p>
+                            <div class="personalcenter_top_lis_msgtips"></div>
+                        </div>
+                    </li>
+                    <li class="personalcenter_top_lis_msg personalcenter_top_lis_select">
+                        <p>999999</p>
+                        <div class="personalcenter_top_lis_msg_about clearfloat">
+                            <p>消息</p>
+                            <div class="personalcenter_top_lis_msgtips"></div>
+                        </div>
+                    </li>
+                    <li class="personalcenter_top_lis_follow">
+                        <p>999999</p>
+                        <div class="personalcenter_top_lis_follow_about clearfloat">
+                            <p>关注</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="personalcenter_contents">
+                <ul class="personalcenter_contents_lis">
+
+
+                    <div class="personalcenter_contents_li_contentselect clearfloat">
+                        <div class="personalcenter_top_lis_msgtips"></div>
+                        <p class="personalcenter_top_lis_title">收到私信</p>
+                        <div class="personalcenter_contents_li_contentselect_more clearfloat">
+                            <img class="personalcenter_contents_li_contentselect_more_icon" src="../imgages/personal_set_topicon.png" alt="">
+                            <ul class="personalcenter_contents_li_contentselect_type clearfloat">
+                                <div class="personalcenter_contents_li_contentselect_uptriangle"></div>
+                                <li class="personalcenter_contents_li_contentselect_type_noout">
+                                    <div class="personalcenter_top_lis_msgtips"></div>
+                                    <span>收到私信</span>
+                                </li>
+                                <li class="personalcenter_contents_li_contentselect_type_out">我的回复</li>
+                            </ul>
+                        </div>
+                        <p class="personalcenter_contents_li_contentselect_number"><span>123</span>篇</p>
+                    </div>
+                    <!--收到私信-->
+                    <li class="personalcenter_contents_li_artical personalcenter_contents_li_show">
+                        <ul class="personalcenter_contents_li_content_lis">
+                            <!--未读消息-->
+                            <li class="personalcenter_contents_li_content_li_receive clearfloat">
+                                <div class="personalcenter_contents_li_content_li_receive_state_icon">
+                                    <img src="../imgages/no_open_msg.png" alt="">
+                                </div>
+                                <div class="personalcenter_contents_li_content_li_receive_from">来自：<span>一二三四五六七八九</span></div>
+                                <div class="personalcenter_contents_li_content_li_receive_time clearfloat">
+                                    <p class="personalcenter_contents_li_content_li_receive_time_date"><span>2016</span>-<span>12</span>-<span>25</span></p>
+                                    <p class="personalcenter_contents_li_content_li_receive_time_time24"><span>23</span>:<span>59</span></p>
+                                </div>
+                                <div class="personalcenter_contents_li_content_li_deletebtn">
+                                    <img src="../imgages/delete.png" alt="">
+                                </div>
+                            </li>
+                            <!--已读消息就是在未读消息的基础上  239行的img替换了和消息来源人的名称颜色变-->
+                            <li class="personalcenter_contents_li_content_li_receive personalcenter_contents_li_content_li_receive_haveread">
+                                <div class="personalcenter_contents_li_content_li_receive_state_icon">
+                                    <img src="../imgages/have_open_msg.png" alt="">
+                                </div>
+                                <div class="personalcenter_contents_li_content_li_receive_from">来自：<span>一二三四五六七八九</span></div>
+                                <div class="personalcenter_contents_li_content_li_receive_time clearfloat">
+                                    <p class="personalcenter_contents_li_content_li_receive_time_date"><span>2016</span>-<span>12</span>- <span>25</span></p>
+                                    <p class="personalcenter_contents_li_content_li_receive_time_time24"><span>23</span>:<span>59</span></p>
+                                </div>
+                                <div class="personalcenter_contents_li_content_li_deletebtn">
+                                    <img src="../imgages/delete.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--我的回复-->
+                    <li class="personalcenter_contents_li_artical_review">
+                        <ul class="personalcenter_contents_li_content_lis">
+                            <!--未读消息-->
+                            <!--<li class="personalcenter_contents_li_content_li_receive clearfloat">
+                                <div class="personalcenter_contents_li_content_li_receive_state_icon">
+                                    <img src="../imgages/no_open_msg.png" alt="">
+                                </div>
+                                <div class="personalcenter_contents_li_content_li_receive_from">来自：<span>一二三四五六七八九</span></div>
+                                <div class="personalcenter_contents_li_content_li_receive_time clearfloat">
+                                    <p class="personalcenter_contents_li_content_li_receive_time_date"><span>2016</span>-<span>12</span>-<span>25</span></p>
+                                    <p class="personalcenter_contents_li_content_li_receive_time_time24"><span>23</span>:<span>59</span></p>
+                                </div>
+                                <div class="personalcenter_contents_li_content_li_deletebtn">
+                                    <img src="../imgages/delete.png" alt="">
+                                </div>
+                            </li>-->
+                            <!--已读消息就是在未读消息的基础上  239行的img替换了和消息来源人的名称颜色变-->
+                            <!--直接引用私信部分的样式。如需要再添加类名-->
+                            <li class="personalcenter_contents_li_content_li_receive personalcenter_contents_li_content_li_receive_haveread">
+                                <div class="personalcenter_contents_li_content_li_receive_state_icon">
+                                    <img src="../imgages/have_open_msg.png" alt="">
+                                </div>
+                                <div class="personalcenter_contents_li_content_li_receive_from">我 回复 <span>一二三四五六七八九</span></div>
+                                <div class="personalcenter_contents_li_content_li_receive_time clearfloat">
+                                    <p class="personalcenter_contents_li_content_li_receive_time_date"><span>2016</span>-<span>12</span>-<span>25</span></p>
+                                    <p class="personalcenter_contents_li_content_li_receive_time_time24"><span>23</span>:<span>59</span></p>
+                                </div>
+                                <div class="personalcenter_contents_li_content_li_deletebtn">
+                                    <img src="../imgages/delete.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="personal_bottom">
+    <div class="personal_bottom_content clearfloat">
+        <p>北京罗兰雅科技有限公司</p><p>Copyright &copy; 十跖网</p><p>京ICP备12013432号-1京公网备案</p><p>11010102001402号</p>
+    </div>
+</div>
+
+<div id="bottom">
+    <div class="bottom_content clearfloat">
+        <div class="back_top">
+            <div class="bottom_imgbox"><img src="../imgages/置顶1.png" alt=""></div>
+            <div class="img_tips">
+                <p>置顶</p>
+                <div class="down_triangle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<ul id="delete_msg_tips">
+    <li id="delete_msg_tip_succe">删除成功</li>
+    <li id="delete_msg_tip_false">删除失败</li>
+</ul>
+
+<!--查看和回复私信-->
+<div id="check_reply_msg_mask" class="clearfloat">
+    <div class="check_reply_msg_box clearfloat">
+        <p class="check_reply_msg_title">私信来自 ></p>
+        <div class="check_reply_msg_from clearfloat">
+            <img class="check_reply_msg_frpic" src="../imgages/author_pic.png" alt="头像">
+            <p class="check_reply_msg_frname">一二三四五六七八九</p>
+            <div class="check_reply_msg_frtime clearfloat"><p><span>2016</span>-<span>05</span>-<span>23</span></p><p><span>12</span>:<span>13</span></p></div>
+        </div>
+        <div class="check_reply_msg_content_box">
+            <div class="check_reply_msg_content">
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+                发觉佛啊我惊愕发哦我；；lark拍；我就个挖哦额就发我i还未恢复
+            </div>
+            <div class="check_reply_msg_btn">
+                <img src="../imgages/have_open_msg.png" alt="回复消息">
+            </div>
+        </div>
+
+        <!--相对定位在回复框结构的内部-->
+        <div class="reply_msg_box">
+            <div class="reply_msg_title clearfloat">
+                <img src="../imgages/no_open_msg.png" alt=""><span>给 TA 回信</span>
+            </div>
+            <form action="">
+                <textarea autofocus name="" id="reply_msg_val" cols="" rows=""></textarea>
+                <div class="reply_msg_btns clearfloat">
+                    <button type="submit">发表</button>
+                    <p class="reply_msg_concel_submit">取消</p>
+                </div>
+            </form>
+        </div>
+        <div class="check_reply_msg_closebtn"></div>
+    </div>
+</div>
+
+<script src="../js/personalcenter_msg.js"></script>
+<script src="../js/same_action.js"></script>
+</body>
+</html>

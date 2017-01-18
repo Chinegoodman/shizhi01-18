@@ -1,0 +1,373 @@
+//less
+//网站中所有的阴影效果
+@bgshadow:inset 0 0 8px 0  #EBEBEB;
+@content_topbarbgcolor:#ffffff;
+@bgcolor:#f6f6f6;
+//资讯列表展开后的颜色样式及侧栏navs颜色
+@top_infor_tec:#62CAFF;
+@top_infor_med:#fd8989;
+@top_infor_eco:#94d816;
+@top_infor_fut:#ffce0a;
+@top_infor_lisbg:#FFF;
+@top_infor_lisbgHover:#F6F6F6;
+
+@slidenavsinfor_lis_box_uls_bg:#f6f6f6;
+//左侧关于部分的颜色
+@slidenavs_others_bordercolor:#e1e1e1;
+@slidenavs_otherscolor:#c5c5c5;
+
+//页面中间的展示项的颜色
+@contents_li_bgcolor:#FFF;
+@contents_li_txt:#333;
+@contents_li_author_name:#6F6F6F;
+@contents_li_author_type:#B6B6B6;
+@contents_li_author_tags_newbg:#FF5D5D;
+@contents_li_author_tags_newfont:#FFF;
+@contents_li_author_tags_selfbg:#FFEA00;
+@contents_li_author_tags_selffont:#333333;
+@contents_li_triangle:f6f6f6;
+@contents_lis_show_bordercolor:#e1e1e1;
+
+//轻浮动
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+
+//新的中间内容部分样式
+@contentbgcolor:#fff;
+@content_navcolor:#B6B6B6;
+@content_navHovercolor:#333333;
+@personal_base_content_one_title:#6F6F6F;
+@bordercolor:#e8e8e8;
+@personal_base_content_one_confirm_select:#fff;
+
+@content_submit_btncolor:#414031;
+@content_submit_btnbgcolor:#f8e71c;
+@content_submitabout_btncolor:#777777;
+//内容部分样式
+html{
+  font-size: 100px;
+}
+body{
+  background: @bgcolor;
+  min-width:1336px;
+}
+#content_box{
+  width:100%;
+  padding-bottom: 0.6rem;
+}
+#content{
+  background:@contentbgcolor;
+  width:7.4rem;
+  margin:0 auto;
+  padding:0.3rem 0.6rem 0.7rem 0.4rem;
+}
+.content_nav{
+  margin-bottom: 0.5rem;
+}
+.content_nav>a{
+  font-size: 12px;
+  color:@content_navcolor;
+}
+.content_nav>a:hover{
+  color: @content_navHovercolor;
+}
+
+.content_submit_form{
+  padding-left: 0.4rem;
+}
+.content_submit>*{
+  float: left;
+}
+.personal_headpic_base_account{
+  width:1.4rem;
+  margin-right: 0.8rem;
+}
+.personal_headpic{
+  /*padding-bottom: 0.3rem;
+  border-bottom: 1px solid @bordercolor;*/
+}
+.personal_headpic>img{
+  display: block;
+  width:1rem;
+  height:1rem;
+  margin:0 auto 0.2rem;
+}
+.personal_headpic_file_btn{
+  position: relative;
+  width:0.78rem;
+  margin:0 auto;
+  height:0.28rem;
+  border:1px solid @bordercolor;
+  border-radius: 0.14rem;
+  overflow: hidden;
+  line-height:0.28rem;
+  cursor: pointer;
+}
+.personal_headpic_file_btn>input{
+  display: block;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: 10;
+  width:100%;
+  height:100%;
+  opacity:0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.personal_headpic_file_btn_mask{
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  text-align: center;
+  z-index: 0;
+  color: @content_navcolor;
+}
+.personal_base_account{
+  padding-top: 0.2rem;
+}
+.personal_base_account>div{
+  height:0.5rem;
+  line-height: 0.5rem;
+  position: relative;
+  font-size: 0.16rem;
+  color: @content_navcolor;
+  //color: @content_navHovercolor;
+}
+.personal_base_account>div>span{
+  position: absolute;
+  right:0;
+  top:0;
+  display: none;
+}
+.personal_base_account>div:hover{
+  color: @content_navHovercolor;
+}
+.personal_base_account>div:hover span{
+  display: block;
+}
+.personal_base_account .personal_base_account_show{
+  color: @content_navHovercolor;
+}
+.personal_base_account .personal_base_account_show>span{
+  display: block;
+}
+
+
+.personal_base_content{
+  width:4.8rem;
+  padding-top:0.1rem;
+}
+.personal_base_content>div:not(.personal_base_content_title){
+  padding-top: 0.3rem;
+}
+.personal_base_content_title{
+  padding-top: 0;
+  font-size: 0.18rem;
+  height:0.18rem;
+  color: @content_navHovercolor;
+}
+.personal_base_content_title>*{
+  float: left;
+}
+.personal_base_content_title>img{
+  margin-top: 0.02rem;
+  width:0.14rem;
+  height:0.14rem;
+  margin-left: 0.3rem;
+}
+.personal_base_content_one_title{
+  height:0.14rem;
+  line-height: 0.14rem;
+}
+.personal_base_content_one_title>p{
+  font-size: 0.14rem;
+  height:0.14rem;
+  line-height: 0.14rem;
+  color:@personal_base_content_one_title;
+  margin-left: 0.06rem;
+  float: left;
+}
+.personal_base_content_one_title>div{
+  float: left;
+  width:0.06rem;
+  height:0.06rem;
+  background: @personal_base_content_one_title;
+  margin-top: 0.04rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.personal_base_content_one_title+input{
+  height:0.5rem;
+  outline:none;
+  border:none;
+  font-size: 0.18rem;
+  border-bottom: 1px solid @bordercolor;
+  width:100%;
+  line-height: 0.5rem;
+  color: @content_navHovercolor;
+  margin-bottom: 0.1rem;
+}
+.personal_base_content_one_title+input::-webkit-input-placeholder {
+  //letter-spacing: 3px;
+  color: @bordercolor;
+  font-size: 0.18rem;
+}
+.personal_base_content_one_confirm{
+  position: relative;
+  height:0.2rem;
+  height:0.2rem;
+  color: @content_navcolor;
+  font-size: 0.14rem;
+}
+.personal_base_content_one_confirm_select{
+  position: absolute;
+  right:0;
+  top:0;
+  width:0.6rem;
+  height:0.2rem;
+  background: @bordercolor;
+  color: @personal_base_content_one_confirm_select;
+  cursor: pointer;
+  border-radius: 1px;
+  overflow: hidden;
+}
+.personal_base_content_one_confirm_select_mask{
+  width:0.2rem;
+  height:0.16rem;
+  background: @personal_base_content_one_confirm_select;
+  position: absolute;
+}
+.personal_base_content_one_confirm_select>p{
+  position: absolute;
+  font-size: 12px;
+  color: @personal_base_content_one_confirm_select;
+  overflow: hidden;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.personal_base_content_one_confirm_select_on{
+
+}
+.personal_base_content_one_confirm_select_on>p:first-child{
+  width:0;
+  height:0;
+}
+.personal_base_content_one_confirm_select_on>p:nth-child(2){
+  width:0.38rem;
+  height:0.2rem;
+  line-height:0.2rem;
+  text-align: center;
+  position: absolute;
+  right:0;
+  top:0;
+}
+.personal_base_content_one_confirm_select_mask{
+
+}
+.personal_base_content_one_confirm_select_on>.personal_base_content_one_confirm_select_mask{
+  left:0.02rem;
+  top:0.02rem;
+}
+
+
+
+.personal_base_content_one_confirm_select_off>p:first-child{
+  width:0.38rem;
+  height:0.2rem;
+  line-height:0.2rem;
+  text-align: center;
+  position: absolute;
+  left:0;
+  top:0;
+}
+.personal_base_content_one_confirm_select_off>p:nth-child(2){
+  width:0;
+  height:0;
+}
+.personal_base_content_one_confirm_select_off>.personal_base_content_one_confirm_select_mask{
+  right:0.02rem;
+  top:0.02rem;
+}
+
+.content_submitabout_btn{
+  float: right;
+  margin-top: 0.6rem;
+}
+.content_submitabout_btn>*{
+  float: left;
+}
+.content_submitabout_btn>li{
+  color: @content_submitabout_btncolor;
+  height:0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.15rem;
+  margin-left: 0.4rem;
+  cursor: pointer;
+}
+.content_submit_btn{
+  background:@content_submit_btnbgcolor;
+  width:1.4rem;
+  height:0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.15rem;
+  color: @content_submit_btncolor;
+  border:none;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  cursor: pointer;
+  outline:none;
+}
+
+.personal_base_content_sex_select{
+  //margin-top: 0.18rem;
+  height:0.5rem;
+}
+.personal_base_content_sex_select>li{
+  float: left;
+  margin-right: 0.4rem;
+  height:0.5rem;
+  line-height: 0.5rem;
+  position: relative;
+  width:0.56rem;
+}
+.personal_base_content_sex_select>li>*{
+  height:0.5rem;
+  line-height: 0.5rem;
+  display: inline-block;
+  float: left;
+}
+.personal_base_content_sex_select>li>span{
+  //padding-left: 0.08rem;
+  padding-left: 0.24rem;
+  position: absolute;
+  width:0.32rem;
+  left:0;
+  top:0;
+  background: url("../imgages/personal_offselect.jpg") left center no-repeat;
+}
+.personal_base_content_sex_select>li>input[type='radio']{
+  opacity:0;
+  width:0.16rem;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: 10;
+}
+.personal_base_content_sex_select>li>input[type='radio']:checked + span{
+  background: url("../imgages/personal_onselect.jpg") left center no-repeat;
+}
+
+.personal_base_content_title2{
+  margin-top: 0.6rem;
+}
+.personal_base_phonenumber_set>span{
+  float: left;
+  font-size: 0.14rem;
+  height: 0.14rem;
+  line-height: 0.14rem;
+  color: @content_navcolor;
+  margin-left: 0.1rem;
+}

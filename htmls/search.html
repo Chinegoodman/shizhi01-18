@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十跖</title>
+    <!--添加网站关键字、网站描述-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="../images/">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/less" href="../css/all_same_style.less">
+    <link rel="stylesheet" type="text/less" href="../css/search.less">
+    <script src="../js/Less_css.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script>
+        window.onload=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+        window.onresize=function () {
+//            var windowWidth=$(window).width();
+            var windowWidth=document.documentElement.clientWidth;
+//            alert(windowWidth);
+            if (windowWidth>1440){
+                document.documentElement.style.fontSize=100+'px';
+            }else if (windowWidth<=1336){
+                document.documentElement.style.fontSize=835/9+'px';
+            }else{
+                document.documentElement.style.fontSize=windowWidth/14.4+'px';
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="header" class="clearfloat">
+    <div class="header_logo_navs clearfloat">
+        <div class="header_logo"><a href="../index.html"><img src="../imgages/top_logo.png" alt="10十跖"></a></div>
+        <ul class="header_navs clearfloat">
+            <a href="javascript:void(0)"><li class="header_information clearfloat">
+                <span>资讯</span>
+                <img src="../imgages/顶部导航.png" alt="">
+            </li></a>
+            <a href="javascript:void(0)"><li class="header_hot">热门</li></a>
+            <a href="expert_page.html"><li class="header_konwledgeteam">智囊团</li></a>
+            <div class="information_box">
+                <div class="header_triangle clearfloat"></div>
+                <div class="infor_lis_box">
+                    <ul class="infor_lis_tec">
+                        <a href="javascript:void(0)">
+                            <li class="infor_lis_title infor_lis_title_tec clearfloat">
+                                科技|Technology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                新创|Newly devised
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                大数据|Big data
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                人工智能|AI
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_med">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_med clearfloat">
+                                医疗|Medical
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                临床预防|Clinical prevention
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                医养结合|Hcc
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                医学研究|Medical researc
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_eco">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_eco clearfloat">
+                                生态|Ecology
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                民生|He people's livelihood
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                空间|Space
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="infor_lis_fut">
+                        <a href="javascript:void (0)">
+                            <li class="infor_lis_title infor_lis_title_fut clearfloat">
+                                未来|Future
+                                <img class="infor_lis_open_icon" src="../imgages/栏目导航.png" alt="">
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                新概念|Newly concept
+                            </li>
+                        </a>
+                        <a href="artical_page.html">
+                            <li>
+                                科幻|Science fiction
+                            </li>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div class="header_others clearfloat">
+        <div class="header_search"><a href="search.html"><img src="../imgages/搜索1.png" alt="搜索"></a></div>
+        <div class="header_personal">
+            <a href="personalcenter_articalpage.html">
+                <img class="header_personal_pic" src="../imgages/24px.png" alt="个人头像">
+                <div class="header_personal_status"></div>
+            </a>
+        </div>
+        <div class="header_contribute">
+            <a href="submission_page.html">
+                <img src="../imgages/发布.png" alt="">
+                <span>投稿</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="content_box">
+    <div id="content">
+        <div class="search_box clearfloat">
+            <input type="text" placeholder="搜索">
+            <div class="search_btn"></div>
+        </div>
+        <div class="search_history clearfloat">
+            <p class="search_history_title">搜索记录</p>
+            <ul class="search_history_lis">
+                <li>搜索记录1</li>
+                <li>搜索记录12</li>
+                <li>搜索记录13</li>
+                <li>搜索记录14</li>
+            </ul>
+            <div class="search_history_delete">清空记录</div>
+        </div>
+        <div class="search_keyword">
+            <p class="search_keyword_title">关键词</p>
+            <ul class="search_keyword_lis clearfloat">
+                <li>关键词</li>
+                <li>关键词</li>
+                <li>关键词</li>
+                <li>关键词</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="bottom">
+    <div class="bottom_content clearfloat">
+        <div class="connect clearfloat">
+            <div class="connect_wx">
+                <div class="bottom_imgbox"><img src="../imgages/微信1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>官方微信</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="connect_wb">
+                <div class="bottom_imgbox"><img src="../imgages/微博1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>微博分享</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="connect_feedback">
+                <div class="bottom_imgbox"><img src="../imgages/反馈1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>意见反馈</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="back_top">
+            <div class="bottom_imgbox"><img src="../imgages/置顶1.png" alt=""></div>
+            <div class="img_tips">
+                <p>置顶</p>
+                <div class="down_triangle"></div>
+            </div>
+        </div>
+        <div class="person_abouts clearfloat">
+            <div class="person_sendmsg">
+                <div class="bottom_imgbox"><img src="../imgages/私信1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>给TA发私信</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="person_follow">
+                <div class="bottom_imgbox"><img src="../imgages/关注1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>关注</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="person_tip-off_details">
+                <div class="bottom_imgbox"><img src="../imgages/更多1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>详细资料</p>
+                    <p>举报</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="person_edit">
+                <div class="bottom_imgbox"><img src="../imgages/修改1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>编辑资料</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+            <div class="person_quit">
+                <div class="bottom_imgbox"><img src="../imgages/更多1.png" alt=""></div>
+                <div class="img_tips">
+                    <p>安全退出</p>
+                    <p>疑问解答</p>
+                    <div class="down_triangle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/same_action.js"></script>
+<script src="../js/search.js"></script>
+</body>
+</html>

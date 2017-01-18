@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body,a{font-family:"宋体","微软雅黑",Arail,Tabhoma; font-size: 12px; text-align: left; color: #666;line-height: 24px;}
+html,body,a{font-family: Arial,"微软雅黑","Microsoft yahei","Hiragino Sans GB","冬青黑体简体中文 w3","Microsoft Yahei","Hiragino Sans GB","冬青黑体简体中文 w3",STXihei,"华文细黑",SimSun,"宋体",Heiti,"黑体",sans-serif; font-size: 12px; text-align: left; color: #666;line-height: 24px;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+/*a:link,a:visited,a:hover,a:active{text-decoration:none;} */
+/*==========================Reset_End===========================*/
+
+/*自定义类*/
+.textover_{
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+
+html,body{
+    min-height:100%;
+}
+
+/*自定义滚动条样式*/
+-webkit-scrollbar{width:0;}
+::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+}
